@@ -5,7 +5,12 @@ import VerifyEmailForm from "@/components/auth/verify-email-form";
 
 export const metadata: Metadata = {
 
-  title: "Verify Email | BenefitX"
+  title: "Verify Email | BenefitX",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 
 };
 

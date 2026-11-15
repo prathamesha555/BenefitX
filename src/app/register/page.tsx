@@ -5,7 +5,12 @@ import RegisterForm from "@/components/auth/register-form";
 
 export const metadata: Metadata = {
 
-  title: "Create Account | BenefitX"
+  title: "Create Account | BenefitX",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 
 };
 

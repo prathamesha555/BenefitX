@@ -5,7 +5,12 @@ import ForgotPasswordForm from "@/components/auth/forgot-password-form";
 
 export const metadata: Metadata = {
 
-  title: "Forgot Password | BenefitX"
+  title: "Forgot Password | BenefitX",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 
 };
 

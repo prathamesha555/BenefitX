@@ -5,7 +5,12 @@ import UserDashboard from "@/components/auth/user-dashboard";
 
 export const metadata: Metadata = {
 
-  title: "My Dashboard | BenefitX"
+  title: "My Dashboard | BenefitX",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 
 };
 

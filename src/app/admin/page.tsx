@@ -16,7 +16,12 @@ export const metadata: Metadata = {
   title: "Admin Dashboard | BenefitX",
 
   description:
-    "Secure BenefitX administration dashboard."
+    "Secure BenefitX administration dashboard.",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 
 };
 

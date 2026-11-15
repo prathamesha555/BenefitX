@@ -5,7 +5,12 @@ import LoginForm from "@/components/auth/login-form";
 
 export const metadata: Metadata = {
 
-  title: "Sign In | BenefitX"
+  title: "Sign In | BenefitX",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 
 };
 

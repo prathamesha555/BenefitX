@@ -8,7 +8,12 @@ export const metadata: Metadata = {
   title: "My Profile | BenefitX",
 
   description:
-    "View and manage your personal BenefitX account information."
+    "View and manage your personal BenefitX account information.",
+
+  robots: {
+    index: false,
+    follow: false,
+  }
 
 };
 
