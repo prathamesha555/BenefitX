@@ -1,26 +1,808 @@
 @import "tailwindcss";
 
+/* =================================
+   BENEFITX OFFICIAL BRAND SYSTEM
+   Emerald Green + Champagne Gold
+================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand-primary: #075B46;
+  --brand-deep: #123D32;
+  --brand-emerald: #167A5B;
+  --brand-gold: #D6B779;
+  --brand-gold-dark: #B8954B;
+
+  --background: #FAF8F2;
+  --background-soft: #F2F5F0;
+  --surface: #FFFFFF;
+  --surface-sage: #EEF3EC;
+
+  --foreground: #292D2C;
+  --text-secondary: #59665F;
+  --text-muted: #7B847D;
+
+  --border: #E4E8E0;
+  --border-strong: #D8DCCF;
+
+  --success: #16845B;
+  --warning: #B8954B;
+  --danger: #B54747;
+
+  --shadow-soft: 0 4px 20px rgba(18, 61, 50, 0.06);
+  --shadow-card: 0 10px 35px rgba(18, 61, 50, 0.08);
+  --shadow-hover: 0 16px 40px rgba(18, 61, 50, 0.13);
+
+  --radius-card: 18px;
+  --radius-button: 12px;
 }
 
 @theme inline {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-emerald: var(--brand-emerald);
+  --color-brand-gold: var(--brand-gold);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #D6B779;
+  color: #123D32;
+}
+
+/* CONTAINERS */
+
+.bx-container {
+  width: min(100% - 40px, 1200px);
+  margin-inline: auto;
+}
+
+.bx-section {
+  padding-block: 88px;
+}
+
+/* HEADINGS */
+
+.bx-section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-gold-dark);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.bx-section-heading {
+  color: var(--brand-deep);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 750;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+.bx-text-muted {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* BUTTONS */
+
+.bx-button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-button);
+  font-size: 14px;
+  font-weight: 650;
+  transition: all 180ms ease;
+}
+
+.bx-button:hover {
+  transform: translateY(-2px);
+}
+
+.bx-button--primary {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    var(--brand-primary),
+    var(--brand-deep)
+  );
+  box-shadow: 0 6px 18px rgba(7, 91, 70, 0.20);
+}
+
+.bx-button--primary:hover {
+  box-shadow: 0 10px 24px rgba(7, 91, 70, 0.28);
+}
+
+.bx-button--secondary {
+  color: var(--brand-deep);
+  background: var(--surface-sage);
+  border-color: var(--border);
+}
+
+.bx-button--outline {
+  color: var(--brand-deep);
+  background: transparent;
+  border-color: var(--border-strong);
+}
+
+.bx-button--outline:hover {
+  background: var(--surface-sage);
+}
+
+/* CARDS */
+
+.bx-card {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  transition: all 200ms ease;
+}
+
+.bx-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--brand-gold);
+}
+
+/* INPUTS */
+
+.bx-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  color: var(--foreground);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  outline: none;
+  transition: all 180ms ease;
+}
+
+.bx-input:focus {
+  border-color: var(--brand-emerald);
+  box-shadow: 0 0 0 4px rgba(22, 122, 91, 0.10);
+}
+
+.bx-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* BRAND BACKGROUNDS */
+
+.bx-brand-gradient {
+  background: linear-gradient(
+    135deg,
+    #075B46 0%,
+    #123D32 65%,
+    #167A5B 100%
+  );
+}
+
+.bx-gold-gradient {
+  background: linear-gradient(
+    135deg,
+    #E8D6AA,
+    #D6B779,
+    #B8954B
+  );
+}
+
+.bx-rose-gradient {
+  background: linear-gradient(
+    135deg,
+    #FAF8F2,
+    #EEF3EC,
+    #E8D6AA
+  );
+}
+
+.bx-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* ACCESSIBILITY */
+
+:focus-visible {
+  outline: 3px solid rgba(214, 183, 121, 0.7);
+  outline-offset: 3px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .bx-section {
+    padding-block: 60px;
+  }
+
+  .bx-container {
+    width: min(100% - 32px, 1200px);
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* ============================================
+   BENEFITX PREMIUM HOMEPAGE
+   3D ANIMATIONS & VISUAL EFFECTS
+============================================ */
+
+/* HERO BACKGROUND */
+
+.bx-home-hero {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(
+      ellipse at 12% 20%,
+      rgba(214, 183, 121, 0.12),
+      transparent 36%
+    ),
+    radial-gradient(
+      ellipse at 85% 65%,
+      rgba(22, 122, 91, 0.10),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #FAF8F2 0%,
+      #FFFFFF 48%,
+      #EEF3EC 100%
+    );
+}
+
+.bx-hero-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.20;
+
+  background-image:
+    linear-gradient(
+      rgba(7, 91, 70, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(7, 91, 70, 0.07) 1px,
+      transparent 1px
+    );
+
+  background-size: 48px 48px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 90%
+  );
+}
+
+.bx-hero-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.bx-hero-glow-one {
+  width: 350px;
+  height: 350px;
+  top: 5%;
+  left: -140px;
+  background: rgba(214, 183, 121, 0.16);
+}
+
+.bx-hero-glow-two {
+  width: 420px;
+  height: 420px;
+  right: -180px;
+  bottom: -60px;
+  background: rgba(22, 122, 91, 0.13);
+}
+
+
+/* ============================================
+   3D HERO STAGE
+============================================ */
+
+.bx-hero-stage {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.bx-hero-platform {
+  position: relative;
+  z-index: 3;
+  width: 305px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(238, 243, 236, 0.92)
+  );
+
+  box-shadow:
+    0 50px 90px rgba(18, 61, 50, 0.15),
+    0 15px 35px rgba(18, 61, 50, 0.10),
+    inset 0 1px 0 white;
+
+  transform:
+    rotateY(-12deg)
+    rotateX(7deg)
+    rotateZ(-2deg);
+
+  transform-style: preserve-3d;
+
+  animation: bx-platform-float 7s ease-in-out infinite;
+
+  transition: transform 400ms ease;
+}
+
+.bx-hero-platform:hover {
+  transform:
+    rotateY(-4deg)
+    rotateX(3deg)
+    rotateZ(0deg)
+    translateY(-8px);
+}
+
+.bx-platform-top {
+  position: relative;
+  min-height: 440px;
+  padding: 23px;
+  overflow: hidden;
+  border-radius: 23px;
+  background: #FFFFFF;
+
+  transform: translateZ(22px);
+}
+
+/* ORBIT RINGS */
+
+.bx-orbit {
+  position: absolute;
+  border: 1px solid rgba(7, 91, 70, 0.13);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bx-orbit-one {
+  width: 450px;
+  height: 450px;
+
+  transform: rotateX(68deg) rotateZ(-20deg);
+
+  animation: bx-orbit-spin 30s linear infinite;
+}
+
+.bx-orbit-two {
+  width: 390px;
+  height: 390px;
+
+  border-style: dashed;
+  border-color: rgba(184, 149, 75, 0.28);
+
+  transform: rotateX(65deg) rotateZ(30deg);
+
+  animation: bx-orbit-spin-reverse 35s linear infinite;
+}
+
+.bx-orbit-three {
+  width: 510px;
+  height: 510px;
+
+  border-color: rgba(7, 91, 70, 0.06);
+
+  transform: rotateX(72deg) rotateZ(60deg);
+}
+
+/* FLOATING CARDS */
+
+.bx-float-card {
+  position: absolute;
+  z-index: 5;
+  min-width: 230px;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 19px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 15px 40px rgba(18, 61, 50, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.bx-float-card-top {
+  top: 13%;
+  right: -1%;
+
+  animation: bx-floating-card-one 6s ease-in-out infinite;
+}
+
+.bx-float-card-bottom {
+  bottom: 13%;
+  left: -4%;
+
+  animation: bx-floating-card-two 7s ease-in-out infinite;
+}
+
+/* DECORATIVE ORBS */
+
+.bx-decor-orb {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bx-decor-orb-one {
+  top: 12%;
+  left: 12%;
+  width: 23px;
+  height: 23px;
+
+  background: linear-gradient(
+    135deg,
+    #F1E1B9,
+    #B8954B
+  );
+
+  box-shadow: 0 5px 20px rgba(184, 149, 75, 0.25);
+
+  animation: bx-orb-float 5s ease-in-out infinite;
+}
+
+.bx-decor-orb-two {
+  right: 13%;
+  bottom: 17%;
+  width: 15px;
+  height: 15px;
+
+  background: #167A5B;
+
+  box-shadow: 0 5px 20px rgba(22, 122, 91, 0.25);
+
+  animation: bx-orb-float 6s ease-in-out infinite reverse;
+}
+
+
+/* ============================================
+   CATEGORY CARDS
+============================================ */
+
+.bx-category-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 255px;
+  padding: 26px;
+
+  border: 1px solid #E4E8E0;
+  border-radius: 23px;
+
+  background: linear-gradient(
+    145deg,
+    #FFFFFF,
+    #FBFCF9
+  );
+
+  text-align: left;
+
+  box-shadow: 0 6px 22px rgba(18, 61, 50, 0.04);
+
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease,
+    border-color 300ms ease;
+}
+
+.bx-category-card::before {
+  content: "";
+  position: absolute;
+
+  right: -65px;
+  bottom: -75px;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background: rgba(214, 183, 121, 0.08);
+
+  transition: transform 500ms ease;
+}
+
+.bx-category-card:hover {
+  transform: translateY(-8px);
+  border-color: #D6B779;
+
+  box-shadow:
+    0 20px 45px rgba(18, 61, 50, 0.10);
+}
+
+.bx-category-card:hover::before {
+  transform: scale(1.6);
+}
+
+
+/* ============================================
+   OFFICIAL RESOURCE CARDS
+============================================ */
+
+.bx-resource-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 365px;
+  padding: 27px;
+
+  border: 1px solid #E4E8E0;
+  border-radius: 24px;
+
+  background: #FFFFFF;
+
+  box-shadow: 0 8px 25px rgba(18, 61, 50, 0.04);
+
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease,
+    border-color 300ms ease;
+}
+
+.bx-resource-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #D6B779;
+
+  box-shadow:
+    0 18px 42px rgba(18, 61, 50, 0.10);
+}
+
+
+/* ============================================
+   ELIGIBILITY BANNER
+============================================ */
+
+.bx-eligibility-banner {
+  isolation: isolate;
+  box-shadow:
+    0 25px 65px rgba(18, 61, 50, 0.15);
+}
+
+
+/* ============================================
+   ANIMATIONS
+============================================ */
+
+@keyframes bx-platform-float {
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotateY(-12deg)
+      rotateX(7deg)
+      rotateZ(-2deg);
+  }
+
+  50% {
+    transform:
+      translateY(-13px)
+      rotateY(-9deg)
+      rotateX(5deg)
+      rotateZ(-1deg);
+  }
+}
+
+@keyframes bx-floating-card-one {
+  0%,
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
+
+  50% {
+    transform: translateY(-13px) rotate(-1deg);
+  }
+}
+
+@keyframes bx-floating-card-two {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(12px) rotate(1deg);
+  }
+}
+
+@keyframes bx-orbit-spin {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes bx-orbit-spin-reverse {
+  from {
+    rotate: 360deg;
+  }
+
+  to {
+    rotate: 0deg;
+  }
+}
+
+@keyframes bx-orb-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-16px) scale(1.12);
+  }
+}
+
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 1024px) {
+  .bx-hero-stage {
+    margin-top: 15px;
+  }
+
+  .bx-float-card-top {
+    right: 0;
+  }
+
+  .bx-float-card-bottom {
+    left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .bx-home-hero {
+    overflow: hidden;
+  }
+
+  .bx-hero-stage {
+    max-width: 390px;
+  }
+
+  .bx-hero-platform {
+    width: 270px;
+  }
+
+  .bx-platform-top {
+    min-height: 420px;
+    padding: 19px;
+  }
+
+  .bx-orbit-one {
+    width: 320px;
+    height: 320px;
+  }
+
+  .bx-orbit-two {
+    width: 290px;
+    height: 290px;
+  }
+
+  .bx-orbit-three {
+    width: 360px;
+    height: 360px;
+  }
+
+  .bx-float-card {
+    min-width: 190px;
+    padding: 11px;
+  }
+
+  .bx-float-card-top {
+    top: 6%;
+    right: -4%;
+  }
+
+  .bx-float-card-bottom {
+    bottom: 6%;
+    left: -3%;
+  }
+
+  .bx-category-card {
+    min-height: 225px;
+  }
+
+  .bx-resource-card {
+    min-height: 340px;
+  }
+}
+
+
+/* ============================================
+   ACCESSIBILITY
+============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .bx-hero-platform,
+  .bx-float-card,
+  .bx-orbit,
+  .bx-decor-orb {
+    animation: none !important;
+  }
+
+  .bx-category-card,
+  .bx-resource-card {
+    transition: none !important;
+  }
 }
