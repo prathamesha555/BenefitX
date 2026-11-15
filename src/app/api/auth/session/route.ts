@@ -101,9 +101,7 @@ export async function POST(request: NextRequest) {
 
       sameSite: "lax",
 
-      path: "/",
-
-      maxAge: SESSION_DURATION / 1000
+      path: "/"
 
     });
 

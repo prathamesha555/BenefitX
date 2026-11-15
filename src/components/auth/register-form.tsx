@@ -9,7 +9,9 @@ import { useRouter } from "next/navigation";
 import {
   createUserWithEmailAndPassword,
   updateProfile,
-  sendEmailVerification
+  sendEmailVerification,
+  setPersistence,
+  browserSessionPersistence
 } from "firebase/auth";
 
 import {
@@ -94,6 +96,9 @@ export default function RegisterForm() {
 
 
     try {
+
+      // Keep newly registered accounts signed in only for this browser session.
+      await setPersistence(auth, browserSessionPersistence);
 
       const credential = await createUserWithEmailAndPassword(
 

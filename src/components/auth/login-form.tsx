@@ -9,7 +9,9 @@ import { useRouter } from "next/navigation";
 
 import {
   signInWithEmailAndPassword,
-  getIdTokenResult
+  getIdTokenResult,
+  setPersistence,
+  browserSessionPersistence
 } from "firebase/auth";
 
 import {
@@ -17,7 +19,6 @@ import {
   EyeOff,
   Mail,
   Lock,
-  ArrowRight,
   AlertCircle,
   LogIn
 } from "lucide-react";
@@ -58,6 +59,9 @@ export default function LoginForm() {
 
 
   try {
+
+    // Keep Firebase authentication only for this browser session.
+    await setPersistence(auth, browserSessionPersistence);
 
     const credential =
       await signInWithEmailAndPassword(
@@ -345,7 +349,7 @@ export default function LoginForm() {
 
           <p className="text-sm text-[#718077]">
 
-            Don't have an account?
+            Don&apos;t have an account?
 
             <Link
               href="/register"
