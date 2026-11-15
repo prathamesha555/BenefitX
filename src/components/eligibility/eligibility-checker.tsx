@@ -49,6 +49,10 @@ import {
 
 } from "@/lib/eligibility-engine";
 
+import {
+  getAgeValidationError
+} from "@/lib/eligibility-validation";
+
 
 import type {
 
@@ -298,7 +302,6 @@ type ResultFilter =
   | "not-match";
 
 
-
 /* =========================================
    MAIN COMPONENT
 ========================================= */
@@ -328,6 +331,8 @@ export default function EligibilityChecker() {
   const [error, setError] =
     useState("");
 
+  const ageValidationError =
+    getAgeValidationError(profile.age);
 
 
   /* =====================================
@@ -370,6 +375,13 @@ export default function EligibilityChecker() {
 
     }
 
+    if (step === 1 && ageValidationError) {
+
+      setError(ageValidationError);
+
+      return;
+
+    }
 
     setError("");
 
@@ -398,6 +410,16 @@ export default function EligibilityChecker() {
 
   function handleEligibilityCheck() {
 
+    // Keep a final guard here in case this handler is triggered without
+    // moving through the normal step-navigation buttons.
+    if (ageValidationError) {
+
+      setStep(1);
+      setError(ageValidationError);
+
+      return;
+
+    }
 
     const selectedOpportunities =
       eligibilityOpportunities.filter((opportunity) => {
@@ -965,6 +987,8 @@ export default function EligibilityChecker() {
                           type="number"
                           min="1"
                           max="120"
+                          step="1"
+                          inputMode="numeric"
                           value={profile.age ?? ""}
                           onChange={(event) => {
 
@@ -979,13 +1003,23 @@ export default function EligibilityChecker() {
 
                           }}
                           placeholder="Enter your age"
+                          aria-invalid={Boolean(ageValidationError)}
+                          aria-describedby="user-age-help"
                           className={inputClass}
                         />
 
 
-                        <p className="mt-2 text-[11px] text-[#7B847D]">
+                        <p
+                          id="user-age-help"
+                          className={`mt-2 text-[11px] ${
+                            ageValidationError
+                              ? "text-red-600"
+                              : "text-[#7B847D]"
+                          }`}
+                        >
 
-                          Some opportunities have age requirements.
+                          {ageValidationError ||
+                            "Optional. Enter a whole number from 1 to 120, or leave blank if you prefer."}
 
                         </p>
 
@@ -2040,10 +2074,11 @@ export default function EligibilityChecker() {
                           href={result.opportunity.sourceUrl}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={`Open the ${result.opportunity.officialPortalName} homepage in a new tab`}
                           className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-[#D8DCCF] bg-white px-5 text-xs font-bold text-[#123D32] transition hover:bg-[#EEF3EC]"
                         >
 
-                          Official Information Source
+                          Open {result.opportunity.officialPortalName} homepage
 
                           <ExternalLink size={14} />
 
@@ -2051,6 +2086,13 @@ export default function EligibilityChecker() {
 
 
                       </div>
+
+                      <p className="mt-3 rounded-xl bg-[#F7F8F4] px-4 py-3 text-[11px] leading-5 text-[#718077]">
+                        This link opens the portal homepage, not a scheme-specific
+                        notification. This is a demonstration record, so verify
+                        the programme, current eligibility conditions and dates
+                        in the latest official notice before acting on it.
+                      </p>
 
 
                     </article>
