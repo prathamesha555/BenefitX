@@ -123,13 +123,17 @@ export default function LoginForm() {
     );
 
 
-    if (!response.ok) {
+    const sessionResult = await response
+  .json()
+  .catch(() => null);
 
-      throw new Error(
-        "Unable to create secure BenefitX session."
-      );
-
-    }
+if (!response.ok) {
+  throw new Error(
+    typeof sessionResult?.error === "string"
+      ? sessionResult.error
+      : `Session creation failed (${response.status}).`
+  );
+}
 
 
     // Match the exact role required by the server-side admin guard.
