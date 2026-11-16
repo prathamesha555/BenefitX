@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 import Link from "next/link";
 
@@ -14,14 +15,10 @@ import {
   BookOpen,
   FileText,
   CheckCircle2,
-  Landmark,
-  AlertCircle
+  Landmark
 } from "lucide-react";
 
-import {
-  scholarships,
-  getScholarshipBySlug
-} from "@/data/scholarships";
+import { getPublishedScholarshipBySlug } from "@/lib/scholarship-data";
 
 
 type Props = {
@@ -31,57 +28,34 @@ type Props = {
 };
 
 
-export async function generateStaticParams() {
+export const metadata: Metadata = {
+  title: "Scholarship Details",
+  description:
+    "Review scholarship eligibility, benefits, required documents and official application information on BenefitX.",
+};
 
-  return scholarships.map((scholarship) => ({
 
-    slug: scholarship.slug
-
-  }));
-
+function ScholarshipDetailsFallback() {
+  return (
+    <main className="min-h-screen bg-[#FAF8F2] px-5 py-24">
+      <div className="mx-auto max-w-[1100px] animate-pulse">
+        <div className="h-5 w-40 rounded bg-[#E4E8E0]" />
+        <div className="mt-10 h-12 max-w-2xl rounded bg-[#E4E8E0]" />
+        <div className="mt-5 h-5 max-w-xl rounded bg-[#E4E8E0]" />
+        <div className="mt-12 h-64 rounded-2xl bg-white" />
+      </div>
+    </main>
+  );
 }
 
-
-export async function generateMetadata({
-  params
-}: Props): Promise<Metadata> {
-
+async function ScholarshipDetailsContent({ params }: Props) {
   const { slug } = await params;
-
-  const scholarship = getScholarshipBySlug(slug);
+  const scholarship = await getPublishedScholarshipBySlug(slug);
 
   if (!scholarship) {
-
-    return {
-      title: "Scholarship Not Found"
-    };
-
-  }
-
-  return {
-
-    title: scholarship.title,
-
-    description: scholarship.description
-
-  };
-
-}
-
-
-export default async function ScholarshipDetailsPage({
-  params
-}: Props) {
-
-  const { slug } = await params;
-
-  const scholarship = getScholarshipBySlug(slug);
-
-  if (!scholarship) {
-
     notFound();
-
   }
+
 
 
   return (
@@ -137,11 +111,11 @@ export default async function ScholarshipDetailsPage({
               <div className="flex flex-wrap items-center gap-3">
 
                 <span className="rounded-full border border-[#D6B779]/40 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-[#E8D6AA]">
-                  Demo Listing
+                  Officially Verified
                 </span>
 
                 <span className="rounded-full bg-white/10 px-3 py-1.5 text-[10px] font-semibold text-white">
-                  Not Verified
+                  Source Verified
                 </span>
 
               </div>
@@ -207,44 +181,6 @@ export default async function ScholarshipDetailsPage({
           {/* MAIN CONTENT */}
 
           <div className="space-y-7">
-
-
-            {/* DEMO WARNING */}
-
-            <div className="rounded-2xl border border-[#D6B779]/60 bg-[#FBF4E5] p-5">
-
-              <div className="flex items-start gap-3">
-
-                <AlertCircle
-                  size={22}
-                  className="mt-0.5 shrink-0 text-[#927337]"
-                />
-
-                <div>
-
-                  <h2 className="text-sm font-bold text-[#725A2C]">
-
-                    Demonstration Record – Not an Actual Scholarship
-
-                  </h2>
-
-                  <p className="mt-2 text-xs leading-7 text-[#806C44]">
-
-                    This page contains illustrative information used
-                    to demonstrate BenefitX functionality. Its
-                    eligibility criteria, benefits and application
-                    details have not been verified.
-
-                    Do not use this example as an actual scholarship
-                    announcement.
-
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
 
 
             {/* OVERVIEW */}
@@ -427,9 +363,8 @@ export default async function ScholarshipDetailsPage({
 
                 <p className="mt-5 text-sm leading-7 text-[#718077]">
 
-                  No verified document list is available for
-                  this demonstration record. Refer to the actual
-                  scheme notification for its document requirements.
+                  No document list has been provided for this opportunity.
+                  Review the official source before preparing your application.
 
                 </p>
 
@@ -635,8 +570,8 @@ export default async function ScholarshipDetailsPage({
 
               <p className="mt-3 text-center text-[10px] leading-5 text-[#7B847D]">
 
-                Opens the general official portal.
-                This is not a verified application link for this demo record.
+                The official source may contain the current application notice,
+                eligibility conditions and application instructions.
 
               </p>
 
@@ -665,5 +600,12 @@ export default async function ScholarshipDetailsPage({
     </main>
 
   );
+}
 
+export default function ScholarshipDetailsPage({ params }: Props) {
+  return (
+    <Suspense fallback={<ScholarshipDetailsFallback />}>
+      <ScholarshipDetailsContent params={params} />
+    </Suspense>
+  );
 }

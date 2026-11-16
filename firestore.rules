@@ -1,0 +1,94 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    function isPublishedAndVerified() {
+      return resource.data.publication.status == 'published'
+        && resource.data.verification.status == 'verified';
+    }
+
+    // Public opportunity data is read-only from client apps.
+    // All create/update/delete operations go through authenticated server routes
+    // using the Firebase Admin SDK.
+    match /scholarships/{scholarshipId} {
+      allow get, list: if isPublishedAndVerified();
+      allow create, update, delete: if false;
+    }
+
+    match /schemes/{schemeId} {
+      allow get, list: if isPublishedAndVerified();
+      allow create, update, delete: if false;
+    }
+
+    // A user can read and update only their own basic profile.
+    // Privileged fields such as role/admin/permissions are never client-writable.
+    match /users/{userId} {
+      function validProfileShape() {
+        return request.resource.data.keys().hasOnly([
+          'uid',
+          'displayName',
+          'email',
+          'createdAt',
+          'updatedAt'
+        ])
+        && request.resource.data.uid == userId;
+      }
+
+      allow get: if isOwner(userId);
+      allow list: if false;
+      allow create, update: if isOwner(userId) && validProfileShape();
+      allow delete: if false;
+
+      // Bookmarks are private to the owner of the parent user document.
+      match /bookmarks/{bookmarkId} {
+        function validBookmark() {
+          return request.resource.data.keys().hasOnly([
+            'bookmarkId',
+            'opportunityId',
+            'kind',
+            'title',
+            'slug',
+            'sourceUrl',
+            'createdAt'
+          ])
+          && request.resource.data.bookmarkId == bookmarkId
+          && request.resource.data.kind in ['scholarship', 'scheme']
+          && request.resource.data.title is string
+          && request.resource.data.slug is string
+          && request.resource.data.sourceUrl is string;
+        }
+
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && validBookmark();
+        allow delete: if isOwner(userId);
+      }
+    }
+
+    // Admin-only collections are accessed through server routes with verified
+    // Firebase Admin SDK sessions. No browser client gets direct access.
+    match /adminUsers/{documentId} {
+      allow read, write: if false;
+    }
+
+    match /auditLogs/{documentId} {
+      allow read, write: if false;
+    }
+
+    match /feedback/{documentId} {
+      allow read, write: if false;
+    }
+
+    // Deny access to every collection not explicitly listed above.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

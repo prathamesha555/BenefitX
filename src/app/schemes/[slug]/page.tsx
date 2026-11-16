@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 import Link from "next/link";
 
@@ -14,15 +15,11 @@ import {
   BookOpen,
   FileText,
   CheckCircle2,
-  AlertCircle,
   Users,
   IndianRupee
 } from "lucide-react";
 
-import {
-  governmentSchemes,
-  getSchemeBySlug
-} from "@/data/schemes";
+import { getPublishedSchemeBySlug } from "@/lib/scheme-data";
 
 
 type Props = {
@@ -34,51 +31,20 @@ type Props = {
 };
 
 
-export async function generateStaticParams() {
-
-  return governmentSchemes.map((scheme) => ({
-
-    slug: scheme.slug
-
-  }));
-
-}
+export const metadata: Metadata = {
+  title: "Government Scheme Details",
+  description:
+    "Review government scheme eligibility, benefits, required documents and official application information on BenefitX.",
+};
 
 
-export async function generateMetadata({
-  params
-}: Props): Promise<Metadata> {
-
-  const { slug } = await params;
-
-  const scheme = getSchemeBySlug(slug);
-
-  if (!scheme) {
-
-    return {
-      title: "Scheme Not Found"
-    };
-
-  }
-
-  return {
-
-    title: scheme.title,
-
-    description: scheme.description
-
-  };
-
-}
-
-
-export default async function SchemeDetailsPage({
+async function SchemeDetailsContent({
   params
 }: Props) {
 
   const { slug } = await params;
 
-  const scheme = getSchemeBySlug(slug);
+  const scheme = await getPublishedSchemeBySlug(slug);
 
   if (!scheme) {
 
@@ -151,13 +117,13 @@ export default async function SchemeDetailsPage({
 
                 <span className="rounded-full border border-[#D6B779]/40 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-[#E8D6AA]">
 
-                  Demo Listing
+                  BenefitX Reviewed
 
                 </span>
 
                 <span className="rounded-full bg-white/10 px-3 py-1.5 text-[10px] font-semibold text-white">
 
-                  Not Verified
+                  Official Source Checked
 
                 </span>
 
@@ -238,42 +204,6 @@ export default async function SchemeDetailsPage({
           {/* MAIN CONTENT */}
 
           <div className="space-y-7">
-
-
-            {/* DEMO NOTICE */}
-
-            <div className="rounded-2xl border border-[#D6B779]/60 bg-[#FBF4E5] p-5">
-
-              <div className="flex items-start gap-3">
-
-                <AlertCircle
-                  size={22}
-                  className="mt-0.5 shrink-0 text-[#927337]"
-                />
-
-                <div>
-
-                  <h2 className="text-sm font-bold text-[#725A2C]">
-
-                    Demonstration Record – Not an Actual Government Scheme
-
-                  </h2>
-
-                  <p className="mt-2 text-xs leading-7 text-[#806C44]">
-
-                    This page contains illustrative information for
-                    BenefitX development and testing. The scheme name,
-                    benefits, eligibility criteria and application
-                    details have not been verified as an actual
-                    government programme.
-
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
 
 
             {/* ABOUT */}
@@ -422,8 +352,8 @@ export default async function SchemeDetailsPage({
 
               <p className="mt-6 rounded-xl bg-[#F2F5F0] p-4 text-xs leading-6 text-[#59665F]">
 
-                The conditions above are illustrative development
-                examples, not verified eligibility rules.
+                Eligibility is subject to the scheme authority’s current
+                rules and final review. Check the official source before applying.
 
               </p>
 
@@ -510,9 +440,8 @@ export default async function SchemeDetailsPage({
 
                 <p className="mt-5 text-sm leading-7 text-[#718077]">
 
-                  No verified document list is available for this
-                  demonstration record. Check the actual scheme
-                  notification for the official requirements.
+                  No document list is provided in this listing. Check the
+                  official scheme notification for the current requirements.
 
                 </p>
 
@@ -694,8 +623,8 @@ export default async function SchemeDetailsPage({
 
               <p className="mt-3 text-center text-[10px] leading-5 text-[#7B847D]">
 
-                Opens a general official information portal,
-                not a verified application link for this demo.
+                BenefitX does not accept applications. Confirm the current
+                application process and requirements on the official portal.
 
               </p>
 
@@ -723,4 +652,25 @@ export default async function SchemeDetailsPage({
 
   );
 
+}
+
+function SchemeDetailsFallback() {
+  return (
+    <main className="min-h-screen bg-[#FAF8F2] px-5 py-24">
+      <div className="mx-auto max-w-[1100px] animate-pulse">
+        <div className="h-5 w-40 rounded bg-[#E4E8E0]" />
+        <div className="mt-10 h-12 max-w-2xl rounded bg-[#E4E8E0]" />
+        <div className="mt-5 h-5 max-w-xl rounded bg-[#E4E8E0]" />
+        <div className="mt-12 h-64 rounded-2xl bg-white" />
+      </div>
+    </main>
+  );
+}
+
+export default function SchemeDetailsPage({ params }: Props) {
+  return (
+    <Suspense fallback={<SchemeDetailsFallback />}>
+      <SchemeDetailsContent params={params} />
+    </Suspense>
+  );
 }

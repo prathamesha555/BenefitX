@@ -1,0 +1,748 @@
+[
+  {
+    "title": "PM-USP – Central Sector Scheme of Scholarship for College and University Students (CSSS)",
+    "slug": "pm-usp-central-sector-scholarship-college-university-students",
+    "provider": "Department of Higher Education, Ministry of Education, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "undergraduate"
+    ],
+    "scholarshipType": [
+      "merit",
+      "need-based"
+    ],
+    "description": "A central merit-based scholarship listed on the National Scholarship Portal for eligible college and university students. Selection and continuation depend on the current scheme guidelines, merit position, course and renewal requirements.",
+    "benefitSummary": "Financial scholarship support for eligible college and university students. The applicable award rate and duration must be confirmed in the current-year scheme specifications before publication.",
+    "eligibilitySummary": [
+      "For eligible college and university students under the current CSSS guidelines.",
+      "Selection is merit-based and subject to the current academic-year rules and verification.",
+      "Applicants must check the official NSP specifications for current income, examination, course, institution and renewal conditions."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Check the current CSSS specifications on the National Scholarship Portal.",
+      "Complete the required NSP registration and application steps if the application window is open.",
+      "Follow institute and government verification instructions shown on NSP."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP)",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026: fresh student application shown open until 30-11-2026. Keep this status/date only after admin rechecks the live portal immediately before publication. Scheme specifics must be confirmed in the portal Specifications link.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+    "slug": "national-means-cum-merit-scholarship-scheme-nmmss",
+    "provider": "Department of School Education and Literacy, Ministry of Education, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "school",
+      "higher-secondary"
+    ],
+    "scholarshipType": [
+      "merit",
+      "need-based"
+    ],
+    "description": "A central scholarship scheme intended to support meritorious students from economically weaker sections and encourage continuation of education at the secondary and higher-secondary stages.",
+    "benefitSummary": "Scholarship assistance for selected students, subject to the current NMMSS guidelines and renewal conditions. Verify current award amount and selection process before publication.",
+    "eligibilitySummary": [
+      "For eligible students selected through the prescribed state/UT-level selection process.",
+      "The scheme targets meritorious students from economically weaker sections.",
+      "Current income ceiling, minimum marks, school type and renewal conditions must be checked in the latest official guidelines."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Check the current NMMSS notice and state-level selection process.",
+      "Follow the official NSP application and verification instructions for the relevant academic year."
+    ],
+    "applicationStatus": "closed",
+    "deadline": "2026-11-15",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP)",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026 showed student applications closed on 15-11-2026; verification dates continued after that. Recheck the live portal for any extension or state-specific process. The Department of School Education & Literacy annual report describes the scheme objective and historical award details; do not reuse historical amounts without current guideline confirmation.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "PM YASASVI Central Sector Scheme of Top Class Education in Schools for OBC, EBC and DNT Students",
+    "slug": "pm-yasasvi-top-class-education-schools-obc-ebc-dnt",
+    "provider": "Department of Social Justice and Empowerment, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "school",
+      "higher-secondary"
+    ],
+    "scholarshipType": [
+      "merit",
+      "category-based",
+      "need-based"
+    ],
+    "description": "A central-sector top-class education scholarship for eligible OBC, EBC and DNT students studying in the school-level classes covered by the scheme.",
+    "benefitSummary": "Financial support for eligible school students in accordance with the current PM YASASVI school guidelines and notified institution/class conditions.",
+    "eligibilitySummary": [
+      "For students from the OBC, EBC and DNT groups covered by the scheme.",
+      "The eligible class, school, income and selection conditions are governed by the current academic-year guidelines.",
+      "Applicants from Maharashtra should confirm that their school and student category are covered in the active NSP specifications."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the PM YASASVI school scheme specifications on NSP.",
+      "Apply through NSP while the relevant academic-year window is open.",
+      "Complete school/institute and department verification as instructed."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP)",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026: fresh applications shown open from 22-10-2026 until 30-11-2026. Check the live specifications for eligible classes, income limits, school requirements and award details before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "PM YASASVI Central Sector Scheme of Top Class Education in College for OBC, EBC and DNT Students",
+    "slug": "pm-yasasvi-top-class-education-college-obc-ebc-dnt",
+    "provider": "Department of Social Justice and Empowerment, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "undergraduate",
+      "postgraduate"
+    ],
+    "scholarshipType": [
+      "merit",
+      "category-based",
+      "need-based"
+    ],
+    "description": "A central-sector top-class education scholarship for eligible OBC, EBC and DNT students pursuing higher education in institutions and courses covered by the scheme.",
+    "benefitSummary": "Financial support for eligible students in notified institutions, subject to the current PM YASASVI college guidelines, available slots and course rules.",
+    "eligibilitySummary": [
+      "For students from OBC, EBC and DNT groups covered by the scheme.",
+      "Institution, course, family-income, selection and renewal conditions are specified in the current scheme guidelines.",
+      "Applicants must confirm that their institution and course are currently covered."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Check the current PM YASASVI college specifications on NSP.",
+      "Apply through NSP during the active application period.",
+      "Complete institute and department verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP)",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026: student applications shown open until 30-11-2026. Confirm institution list, income ceiling, slot allocation, course coverage and benefit amounts from the current Specifications before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "AICTE – Pragati Scholarship Scheme for Girl Students (Technical Degree)",
+    "slug": "aicte-pragati-scholarship-girl-students-technical-degree",
+    "provider": "All India Council for Technical Education (AICTE), Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "undergraduate"
+    ],
+    "scholarshipType": [
+      "merit",
+      "technical"
+    ],
+    "description": "An AICTE scholarship listed on NSP for eligible girl students admitted to approved technical degree programmes. Current admission-year, family-income, family-beneficiary and selection rules must be checked against the active scheme specifications.",
+    "benefitSummary": "Scholarship assistance for eligible girl students in AICTE-approved technical degree programmes. Award value and duration must be confirmed from the current guidelines.",
+    "eligibilitySummary": [
+      "For eligible girl students admitted to an AICTE-approved technical degree programme.",
+      "The current rules determine eligible entry year, lateral-entry cases, family income and number of eligible children per family.",
+      "Selection and renewal are subject to the active AICTE/NSP guidelines."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current AICTE Pragati degree specifications on NSP.",
+      "Submit the online application through NSP when the cycle is open.",
+      "Complete institute and state technical-education verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP) / AICTE",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026: student applications shown open until 30-11-2026. The available older AICTE guideline PDF is dated July 2020; do not treat its values as current without checking current-year specifications. Current 2026-27 listing is evidence the scheme is listed, not a substitute for current eligibility verification.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "AICTE – Pragati Scholarship Scheme for Girl Students (Technical Diploma)",
+    "slug": "aicte-pragati-scholarship-girl-students-technical-diploma",
+    "provider": "All India Council for Technical Education (AICTE), Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "diploma"
+    ],
+    "scholarshipType": [
+      "merit",
+      "technical"
+    ],
+    "description": "An AICTE scholarship listed on NSP for eligible girl students admitted to approved technical diploma programmes. Current admission-year, family-income and selection rules must be checked against the active scheme specifications.",
+    "benefitSummary": "Scholarship assistance for eligible girl students in AICTE-approved technical diploma programmes. Award value and duration must be confirmed from current guidelines.",
+    "eligibilitySummary": [
+      "For eligible girl students admitted to an AICTE-approved technical diploma programme.",
+      "Entry-year, family-income, family-beneficiary and selection requirements are determined by the current scheme guidelines.",
+      "Applicants must confirm the current programme and institution coverage."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current AICTE Pragati diploma specifications on NSP.",
+      "Submit the online application through NSP when the cycle is open.",
+      "Complete institute and state technical-education verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP) / AICTE",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026: student applications shown open until 30-11-2026. Verify current-year rules and award value in the current specifications before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "AICTE – Saksham Scholarship Scheme for Specially Abled Students (Technical Degree)",
+    "slug": "aicte-saksham-scholarship-specially-abled-technical-degree",
+    "provider": "All India Council for Technical Education (AICTE), Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "undergraduate"
+    ],
+    "scholarshipType": [
+      "disability",
+      "technical"
+    ],
+    "description": "An AICTE welfare-based scholarship listed on NSP for eligible specially-abled students pursuing approved technical degree programmes.",
+    "benefitSummary": "Scholarship assistance for eligible students in approved technical degree programmes. Disability threshold, income conditions, award and renewal rules must be checked in the current specifications.",
+    "eligibilitySummary": [
+      "For eligible specially-abled students in AICTE-approved technical degree courses.",
+      "Current disability, admission, income and institution rules apply.",
+      "Applicants should check the active AICTE/NSP specifications and applicable disability documentation requirements."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current AICTE Saksham degree specifications on NSP.",
+      "Apply through NSP during the active academic-year window.",
+      "Complete institute and department verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP) / AICTE",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026: student applications shown open until 30-11-2026. Verify current disability percentage, income cap, award and supporting documents from current specifications before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "AICTE – Saksham Scholarship Scheme for Specially Abled Students (Technical Diploma)",
+    "slug": "aicte-saksham-scholarship-specially-abled-technical-diploma",
+    "provider": "All India Council for Technical Education (AICTE), Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "diploma"
+    ],
+    "scholarshipType": [
+      "disability",
+      "technical"
+    ],
+    "description": "An AICTE welfare-based scholarship listed on NSP for eligible specially-abled students pursuing approved technical diploma programmes.",
+    "benefitSummary": "Scholarship assistance for eligible students in approved technical diploma programmes. Current disability, income, award and renewal rules must be checked in official specifications.",
+    "eligibilitySummary": [
+      "For eligible specially-abled students in AICTE-approved technical diploma courses.",
+      "Current disability, admission, income and institution rules apply.",
+      "Applicants should check the active AICTE/NSP specifications and applicable disability documentation requirements."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current AICTE Saksham diploma specifications on NSP.",
+      "Apply through NSP during the active academic-year window.",
+      "Complete institute and department verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP) / AICTE",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP Academic Year 2026-27 listing reviewed 17 Nov 2026: student applications shown open until 30-11-2026. Verify current disability percentage, income cap, award and documents before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "AICTE – Swanath Scholarship Scheme (Technical Degree)",
+    "slug": "aicte-swanath-scholarship-technical-degree",
+    "provider": "All India Council for Technical Education (AICTE), Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "undergraduate"
+    ],
+    "scholarshipType": [
+      "category-based",
+      "technical",
+      "need-based"
+    ],
+    "description": "An AICTE welfare scholarship for eligible students in specified vulnerable circumstances who are pursuing approved technical degree courses. The scheme guidelines describe covered circumstances and the conditions for support.",
+    "benefitSummary": "The May 2025 AICTE guideline document states an annual scholarship amount for eligible degree/diploma students; confirm current award and rules against the active 2026-27 specifications before publication.",
+    "eligibilitySummary": [
+      "The AICTE guideline document identifies specified categories including orphan students, students whose parent(s) died due to COVID-19, and wards of Armed Forces/Central Paramilitary Forces personnel martyred in action; the current version must be checked for all categories.",
+      "The May 2025 guideline states an annual family-income ceiling and requires study in an AICTE-approved regular-mode course; verify current-year conditions.",
+      "The current scheme prohibits some overlapping government/AICTE scholarship support; check the full current conditions."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current AICTE Swanath specifications on NSP.",
+      "Apply online through NSP when the cycle is open.",
+      "Upload the category, income and institution documents specified in the active guidelines.",
+      "Complete institute and state-level verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP) / AICTE",
+    "sourceUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+    "sourceNotes": "NSP AY 2026-27 listing shows AICTE Swanath Technical Degree open until 30-11-2026 (NSP catalogue). Direct linked AICTE guidelines are dated May 2025 and describe scheme categories, income criteria, approved-course conditions and annual support. Admin must confirm whether a later 2026-27 guideline supersedes the PDF before marking verified.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "AICTE – Swanath Scholarship Scheme (Technical Diploma)",
+    "slug": "aicte-swanath-scholarship-technical-diploma",
+    "provider": "All India Council for Technical Education (AICTE), Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "diploma"
+    ],
+    "scholarshipType": [
+      "category-based",
+      "technical",
+      "need-based"
+    ],
+    "description": "An AICTE welfare scholarship for eligible students in specified vulnerable circumstances who are pursuing approved technical diploma courses.",
+    "benefitSummary": "The May 2025 AICTE guideline document states annual support for eligible diploma students; confirm current award and conditions against the active 2026-27 specifications before publication.",
+    "eligibilitySummary": [
+      "The AICTE guideline document identifies specified categories including orphan students, students whose parent(s) died due to COVID-19, and wards of Armed Forces/Central Paramilitary Forces personnel martyred in action; check the current version for all categories.",
+      "The May 2025 guideline states income and approved regular-mode course requirements; verify the current year's criteria.",
+      "Check the full scheme rules for restrictions on receiving another government/AICTE scholarship."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current AICTE Swanath diploma specifications on NSP.",
+      "Apply online through NSP when the cycle is open.",
+      "Upload the documents specified in the active guidelines.",
+      "Complete institute and state-level verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP) / AICTE",
+    "sourceUrl": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf",
+    "sourceNotes": "NSP AY 2026-27 listing shows AICTE Swanath Technical Diploma open until 30-11-2026. Direct linked AICTE guidelines are dated May 2025; confirm that they remain current for AY 2026-27 before verification/publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "National Scholarship for Post Graduate Studies",
+    "slug": "national-scholarship-for-post-graduate-studies",
+    "provider": "University Grants Commission (UGC), Ministry of Education, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "postgraduate"
+    ],
+    "scholarshipType": [
+      "merit"
+    ],
+    "description": "A UGC scholarship listed on the National Scholarship Portal for eligible students pursuing postgraduate studies in India. Current admission, age, course, institution, merit and renewal conditions must be checked in the active guidelines.",
+    "benefitSummary": "Financial assistance for eligible postgraduate study. Award amount, duration and eligible course conditions must be confirmed from current UGC/NSP specifications.",
+    "eligibilitySummary": [
+      "For eligible students pursuing postgraduate study in India under the UGC scheme.",
+      "Current rules determine eligible course, first-year admission, age, institution and other academic conditions.",
+      "Applicants should consult the current UGC guideline document and NSP scheme specifications."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current National Scholarship for Post Graduate Studies specifications on NSP.",
+      "Apply through NSP during the active academic-year window.",
+      "Complete institute and UGC verification steps."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP) / University Grants Commission",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP AY 2026-27 listing reviewed 17 Nov 2026: scheme listed with student applications open until 30-11-2026. The linked guideline PDF in the current portal listing is titled 2023-24; verify whether revised guidelines apply to AY 2026-27 before publishing detailed eligibility/benefits.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Post-Matric Scholarship for Students with Disabilities",
+    "slug": "post-matric-scholarship-students-with-disabilities",
+    "provider": "Department of Empowerment of Persons with Disabilities, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "higher-secondary",
+      "diploma",
+      "undergraduate",
+      "postgraduate",
+      "doctoral"
+    ],
+    "scholarshipType": [
+      "disability",
+      "need-based"
+    ],
+    "description": "A welfare-based central scholarship listed on NSP for eligible students with disabilities pursuing post-matric or post-secondary education.",
+    "benefitSummary": "Scholarship support for eligible post-matric students with disabilities, subject to the current scheme's course, disability, income and maintenance rules.",
+    "eligibilitySummary": [
+      "For students with disabilities in the post-matric/post-secondary levels covered by the scheme.",
+      "The current guidelines specify disability certification, income, course and institution requirements.",
+      "Applicants should check whether the selected course and institution are recognised under the active scheme."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Check the Post-Matric Scholarship for Students with Disabilities specifications on NSP.",
+      "Complete any UDID/disability verification steps required by the current portal instructions.",
+      "Submit the NSP application and complete institute and department verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP)",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP AY 2026-27 listing reviewed 17 Nov 2026: student applications shown open until 30-11-2026. Current NSP announcement instructs disabled students to use the UDID portal and provide consent for UDID details sharing before application. Verify exact scheme-specific eligibility and award details before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Scholarship for Top Class Education for Students with Disabilities",
+    "slug": "top-class-education-scholarship-students-with-disabilities",
+    "provider": "Department of Empowerment of Persons with Disabilities, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "undergraduate",
+      "postgraduate"
+    ],
+    "scholarshipType": [
+      "disability",
+      "merit"
+    ],
+    "description": "A central welfare scholarship listed on NSP for eligible students with disabilities pursuing higher education in institutions/courses covered by the Top Class scheme.",
+    "benefitSummary": "Financial support for eligible higher education students with disabilities, according to the current scheme guidelines and approved institution/course conditions.",
+    "eligibilitySummary": [
+      "For students with disabilities who meet current Top Class higher-education conditions.",
+      "Institution/course eligibility, disability certification, income limits and selection rules must be checked in the active guidelines.",
+      "The current NSP process may require UDID registration and consent for sharing disability details."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Check the Top Class Education for Students with Disabilities specifications on NSP.",
+      "Complete required UDID-related steps on the official portal.",
+      "Apply through NSP and complete institute/department verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal (NSP)",
+    "sourceUrl": "https://scholarships.gov.in/All-Scholarships",
+    "sourceNotes": "NSP AY 2026-27 listing reviewed 17 Nov 2026: fresh applications shown open until 30-11-2026. Confirm the current institution list, course levels, disability criteria, income and award details before publishing.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Central Sector Scholarship of Top Class Education for SC Students",
+    "slug": "central-sector-top-class-education-scholarship-sc-students",
+    "provider": "Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "educationLevels": [
+      "undergraduate",
+      "postgraduate"
+    ],
+    "scholarshipType": [
+      "category-based",
+      "merit",
+      "need-based"
+    ],
+    "description": "A central-sector scholarship intended to promote quality higher education for eligible Scheduled Caste students admitted to institutions notified under the scheme.",
+    "benefitSummary": "Financial support for eligible SC students in notified institutions. The current-year institution list, slot allocation, eligible costs and award details must be checked in the current guidelines.",
+    "eligibilitySummary": [
+      "For eligible Scheduled Caste students pursuing studies beyond Class 12.",
+      "Admission must be in an institution notified/empanelled under the scheme.",
+      "The Ministry's current guidelines specify family-income, course, institution and slot conditions."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Check the current Top Class Education for SC Students scheme guidelines and notified institution list.",
+      "Apply through NSP within the current academic-year window.",
+      "Complete institute and department verification."
+    ],
+    "applicationStatus": "open",
+    "deadline": "2026-11-30",
+    "amount": null,
+    "officialPortalName": "National Scholarship Portal / Department of Social Justice and Empowerment",
+    "sourceUrl": "https://socialjustice.gov.in/schemes/27",
+    "sourceNotes": "Ministry of Social Justice & Empowerment page lists 2026-27 guidelines published 24 Jun 2026; NSP AY 2026-27 listing reviewed 17 Nov 2026 shows student applications open until 30-11-2026. Confirm current notified institution list, income ceiling, course and amount in the 2026-27 guidelines.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Scheme (DHE – EBC)",
+    "slug": "rajarshi-chhatrapati-shahu-maharaj-shikshan-shulkh-shishyavrutti-dhe-ebc",
+    "provider": "Directorate of Higher Education, Government of Maharashtra",
+    "providerType": "State Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "educationLevels": [
+      "diploma",
+      "undergraduate",
+      "postgraduate"
+    ],
+    "scholarshipType": [
+      "need-based"
+    ],
+    "description": "A Maharashtra fee-support scholarship for eligible economically weaker section students admitted to professional and non-professional courses covered by the Directorate of Higher Education.",
+    "benefitSummary": "Tuition-fee support according to course type, institution type, student eligibility and the applicable government resolution. Percentage/amount must be checked for the current year and applicant profile.",
+    "eligibilitySummary": [
+      "The MahaDBT DHE scheme page describes eligibility for students with annual family income up to ₹8 lakh in covered professional and non-professional courses.",
+      "The college/university and course must be within the Directorate of Higher Education scheme coverage.",
+      "Private universities and self-financed private universities are excluded on the source page; confirm current exclusions and any gender/course-specific benefits."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Open the scheme details on MahaDBT.",
+      "Check the current DHE eligibility and fee reimbursement rules.",
+      "Apply through the official MahaDBT portal and follow institute verification instructions."
+    ],
+    "applicationStatus": "not-verified",
+    "deadline": null,
+    "amount": null,
+    "officialPortalName": "MahaDBT – Aaple Sarkar DBT",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AA86467549C6E0CFFDFD61E992C8610ED352EC9DEF886C9CD",
+    "sourceNotes": "Official MahaDBT DHE scheme details reviewed 17 Nov 2026. The portal page describes family income up to ₹8 lakh and course/institution limits; fee rates vary by course, income, institution type and applicant gender. Review current 2026-27 GR and new MahaDBT 2.0 workflow before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Dr. Panjabrao Deshmukh Vasatigruh Nirvah Bhatta Yojna (DHE)",
+    "slug": "dr-panjabrao-deshmukh-vasatigruh-nirvah-bhatta-dhe",
+    "provider": "Directorate of Higher Education, Government of Maharashtra",
+    "providerType": "State Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "educationLevels": [
+      "undergraduate",
+      "postgraduate"
+    ],
+    "scholarshipType": [
+      "need-based"
+    ],
+    "description": "A Maharashtra student maintenance-allowance scheme for eligible students in professional and non-professional courses covered by the Directorate of Higher Education, including specified economically weaker, small-farmer and registered-labourer cases.",
+    "benefitSummary": "Hostel-related maintenance assistance that may include food, residence and subsistence components; the payable amount depends on city/location, course and eligibility category under current rules.",
+    "eligibilitySummary": [
+      "The scheme applies to eligible students in DHE-covered institutions and courses.",
+      "The official scheme page identifies eligible EBC students and students whose parents are small landholder farmers or registered labourers, subject to the detailed rules.",
+      "Income band, district quota, institution type, hostel status and course conditions must be checked in the current scheme details."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Review the DHE scheme details on MahaDBT.",
+      "Confirm course, income/category and hostel eligibility for the current year.",
+      "Apply through MahaDBT and complete institute verification."
+    ],
+    "applicationStatus": "not-verified",
+    "deadline": null,
+    "amount": null,
+    "officialPortalName": "MahaDBT – Aaple Sarkar DBT",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51A1FA3AA7E67D54CF402FD88D88C64949C41EC3238C8545A71",
+    "sourceNotes": "Official MahaDBT DHE details reviewed 17 Nov 2026. Portal explains professional/non-professional course coverage and location-based food/residence/subsistence support. Exact current-year allowance, quota, income and hostel criteria must be confirmed against latest GR before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Post Matric Scholarship to OBC Students",
+    "slug": "post-matric-scholarship-obc-students-maharashtra",
+    "provider": "VJNT, OBC and SBC Welfare Department, Government of Maharashtra",
+    "providerType": "State Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "educationLevels": [
+      "higher-secondary",
+      "diploma",
+      "undergraduate",
+      "postgraduate",
+      "doctoral"
+    ],
+    "scholarshipType": [
+      "category-based",
+      "need-based"
+    ],
+    "description": "A Maharashtra post-matric scholarship for eligible students belonging to the Other Backward Classes, providing education-related financial assistance under the state welfare department.",
+    "benefitSummary": "Eligible students may receive tuition-fee, examination-fee and maintenance-allowance benefits. Maintenance rates differ by course group and hosteller/day-scholar status; check current rules.",
+    "eligibilitySummary": [
+      "Applicant must meet the OBC category and Maharashtra domicile/residency requirements in the current scheme rules.",
+      "Course, institution, income and renewal conditions apply.",
+      "The official MahaDBT page lists tuition fees, examination fees and maintenance allowance as scheme benefits."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Read the current OBC post-matric scheme details on MahaDBT.",
+      "Complete the applicant profile and supporting certificate requirements.",
+      "Submit the online application and complete institute/department verification."
+    ],
+    "applicationStatus": "not-verified",
+    "deadline": null,
+    "amount": null,
+    "officialPortalName": "MahaDBT – Aaple Sarkar DBT",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AB02E984835E89FEFDB316E301CE6A991F41C5D42B01A7D7E",
+    "sourceNotes": "Official MahaDBT scheme detail page reviewed 17 Nov 2026. It identifies OBC tuition/exam fee and maintenance allowance benefits, with varying maintenance amounts by course group and hosteller status. Confirm current AY 2026-27 eligibility, income ceiling, course groups and documents before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Post Matric Scholarship to VJNT Students",
+    "slug": "post-matric-scholarship-vjnt-students-maharashtra",
+    "provider": "VJNT, OBC and SBC Welfare Department, Government of Maharashtra",
+    "providerType": "State Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "educationLevels": [
+      "higher-secondary",
+      "diploma",
+      "undergraduate",
+      "postgraduate",
+      "doctoral"
+    ],
+    "scholarshipType": [
+      "category-based",
+      "need-based"
+    ],
+    "description": "A Maharashtra post-matric scholarship for eligible students from Vimukta Jatis and Nomadic Tribes, providing education-related assistance under the state welfare department.",
+    "benefitSummary": "Eligible VJNT students may receive tuition-fee, examination-fee and maintenance-allowance support. Rates depend on course group and hosteller/day-scholar status.",
+    "eligibilitySummary": [
+      "Applicant must satisfy the VJNT category and Maharashtra domicile/residency requirements.",
+      "Course, institution, income, attendance and renewal conditions are governed by the current scheme rules.",
+      "The official MahaDBT page describes tuition fees, examination fees and maintenance allowance for eligible VJNT students."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Review the VJNT post-matric scheme details on MahaDBT.",
+      "Prepare the current category, domicile, income and academic documents required by the portal.",
+      "Submit the application and complete institute/department verification."
+    ],
+    "applicationStatus": "not-verified",
+    "deadline": null,
+    "amount": null,
+    "officialPortalName": "MahaDBT – Aaple Sarkar DBT",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AFD83FFC8C5199983E26D3BE9645241F26E1947ED73B2823D",
+    "sourceNotes": "Official MahaDBT scheme detail page reviewed 17 Nov 2026. It describes tuition/examination fee and maintenance allowance. Verify current course groups, income ceiling, category/domicile proof, and 2026-27 rules before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Post Matric Scholarship to SBC Students",
+    "slug": "post-matric-scholarship-sbc-students-maharashtra",
+    "provider": "VJNT, OBC and SBC Welfare Department, Government of Maharashtra",
+    "providerType": "State Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "educationLevels": [
+      "higher-secondary",
+      "diploma",
+      "undergraduate",
+      "postgraduate",
+      "doctoral"
+    ],
+    "scholarshipType": [
+      "category-based",
+      "need-based"
+    ],
+    "description": "A Maharashtra post-matric scholarship for eligible students belonging to the Special Backward Class category, administered by the state welfare department through MahaDBT.",
+    "benefitSummary": "Education-related financial assistance under the current SBC post-matric rules. Applicable fees, maintenance allowance, rates and course coverage must be confirmed from the official scheme details.",
+    "eligibilitySummary": [
+      "Applicant must meet the Special Backward Class category and Maharashtra residency requirements in current rules.",
+      "Course, institution, income and renewal conditions apply.",
+      "The MahaDBT portal lists the SBC post-matric scholarship under the VJNT/OBC/SBC welfare department."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Open the SBC post-matric scheme details on MahaDBT.",
+      "Check the current required certificate and course conditions.",
+      "Apply through MahaDBT and complete institute/department verification."
+    ],
+    "applicationStatus": "not-verified",
+    "deadline": null,
+    "amount": null,
+    "officialPortalName": "MahaDBT – Aaple Sarkar DBT",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51ABD801C85A5E1070827B2230746448BA9CCB9B577565F338F",
+    "sourceNotes": "Official MahaDBT SBC scheme details reviewed 17 Nov 2026. Scheme existence and department are confirmed on the official portal; verify latest benefit amounts, course eligibility, income ceiling and document checklist before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Open Merit Scholarships in Junior College",
+    "slug": "open-merit-scholarships-junior-college-maharashtra",
+    "provider": "School Education and Sports Department, Government of Maharashtra",
+    "providerType": "State Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "educationLevels": [
+      "higher-secondary"
+    ],
+    "scholarshipType": [
+      "merit"
+    ],
+    "description": "A Maharashtra merit scholarship listed on MahaDBT for eligible students studying in Class 11 or Class 12 who meet the prescribed SSC performance and continuation requirements.",
+    "benefitSummary": "A scholarship for eligible junior-college students. The official portal page has described a monthly scholarship payment; confirm the current amount, payment period and renewal rules in the latest Government Resolution before publication.",
+    "eligibilitySummary": [
+      "For students studying in Class 11 or Class 12.",
+      "The MahaDBT details page describes a minimum SSC percentage and first-attempt condition.",
+      "Renewal requires satisfactory progress and compliance with the current rules."
+    ],
+    "documents": [],
+    "applicationProcess": [
+      "Review the Open Merit Scholarships in Junior College details on MahaDBT.",
+      "Check the latest Government Resolution and current application window.",
+      "Apply through the official MahaDBT portal as instructed by the school/department."
+    ],
+    "applicationStatus": "not-verified",
+    "deadline": null,
+    "amount": null,
+    "officialPortalName": "MahaDBT – Aaple Sarkar DBT",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/SchemeData/SchemeData?str=E9DDFA703C38E51AD2BE9F3A5300828BE4EFF8979CAC37F89BF462A7353CD060",
+    "sourceNotes": "Official MahaDBT listing reviewed 17 Nov 2026. Portal description states eligibility for Class 11/12 and SSC marks criteria. The historical amount/percentage must be checked against the current GR and academic-year notice before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  }
+]

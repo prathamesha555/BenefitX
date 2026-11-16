@@ -19,19 +19,66 @@ import {
   Filter
 } from "lucide-react";
 
-import { scholarships } from "@/data/scholarships";
-
 import ScholarshipCard from "./scholarship-card";
 
 import type {
   EducationLevel,
   ScholarshipType,
   ScholarshipScope,
-  ApplicationStatus
+  ApplicationStatus,
+  Scholarship
 } from "@/types/scholarship";
 
 
 export default function ScholarshipDirectory() {
+
+  const [scholarships, setScholarships] = useState<Scholarship[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadScholarships() {
+      try {
+        setIsLoading(true);
+        setLoadError(null);
+
+        const response = await fetch("/api/scholarships", {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+        const payload = await response.json();
+
+        if (!response.ok) {
+          throw new Error(
+            typeof payload.error === "string"
+              ? payload.error
+              : "Unable to load scholarships.",
+          );
+        }
+
+        setScholarships(
+          Array.isArray(payload.scholarships)
+            ? (payload.scholarships as Scholarship[])
+            : [],
+        );
+      } catch (error) {
+        if (controller.signal.aborted) return;
+        console.error("Scholarship directory loading error:", error);
+        setLoadError(
+          error instanceof Error
+            ? error.message
+            : "Unable to load scholarships. Please try again.",
+        );
+      } finally {
+        if (!controller.signal.aborted) setIsLoading(false);
+      }
+    }
+
+    void loadScholarships();
+    return () => controller.abort();
+  }, []);
 
   const [search, setSearch] = useState("");
 
@@ -202,7 +249,8 @@ export default function ScholarshipDirectory() {
     scope,
     state,
     status,
-    sort
+    sort,
+    scholarships
   ]);
 
 
@@ -329,7 +377,7 @@ export default function ScholarshipDirectory() {
                 </p>
 
                 <p className="text-[10px] text-[#D4E2DA]">
-                  Demo Records
+                  Published Listings
                 </p>
 
               </div>
@@ -370,35 +418,6 @@ export default function ScholarshipDirectory() {
       <section className="px-5 py-16 md:py-20">
 
         <div className="mx-auto max-w-[1200px]">
-
-
-          {/* DEMO DISCLAIMER */}
-
-          <div className="mb-10 flex items-start gap-3 rounded-2xl border border-[#D6B779]/50 bg-[#FBF4E5] p-5">
-
-            <ShieldCheck
-              size={21}
-              className="mt-0.5 shrink-0 text-[#927337]"
-            />
-
-            <div>
-
-              <h3 className="text-sm font-bold text-[#725A2C]">
-                Demonstration scholarship directory
-              </h3>
-
-              <p className="mt-1 text-xs leading-6 text-[#806C44]">
-
-                The current records are examples for development and
-                testing. They are not verified scholarship announcements.
-                No application deadlines or financial benefits are being
-                claimed. Official listings will be added after verification.
-
-              </p>
-
-            </div>
-
-          </div>
 
 
           {/* SEARCH AND FILTER HEADER */}
@@ -795,7 +814,7 @@ export default function ScholarshipDirectory() {
 
                   <p className="mt-1 text-xs text-[#7B847D]">
 
-                    Showing matching demonstration records.
+                    Showing opportunities verified against their official sources.
 
                   </p>
 
@@ -837,7 +856,28 @@ export default function ScholarshipDirectory() {
 
               {/* SCHOLARSHIP GRID */}
 
-              {filteredScholarships.length > 0 ? (
+              {isLoading ? (
+
+                <div className="rounded-3xl border border-[#E4E8E0] bg-white px-6 py-16 text-center">
+                  <p className="text-sm font-semibold text-[#123D32]">Loading verified scholarships...</p>
+                  <p className="mt-2 text-xs text-[#718077]">Connecting to the BenefitX database.</p>
+                </div>
+
+              ) : loadError ? (
+
+                <div className="rounded-3xl border border-red-200 bg-white px-6 py-16 text-center">
+                  <h3 className="text-lg font-bold text-[#123D32]">Scholarships could not be loaded</h3>
+                  <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-[#718077]">{loadError}</p>
+                  <button
+                    type="button"
+                    onClick={() => window.location.reload()}
+                    className="mt-6 rounded-xl bg-[#075B46] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#123D32]"
+                  >
+                    Try Again
+                  </button>
+                </div>
+
+              ) : filteredScholarships.length > 0 ? (
 
                 <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
 
@@ -873,10 +913,9 @@ export default function ScholarshipDirectory() {
 
                   <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-[#718077]">
 
-                    We couldn't find any records matching
-                    your current search and filters.
-
-                    Try changing your search criteria.
+                    {scholarships.length === 0
+                      ? "No verified scholarships have been published yet. Please check back after the BenefitX team reviews and publishes opportunities."
+                      : "We couldn't find any published scholarships matching your current search and filters. Try changing your search criteria."}
 
                   </p>
 

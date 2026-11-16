@@ -23,15 +23,14 @@ import {
   Accessibility,
 } from "lucide-react";
 
-import { governmentSchemes } from "@/data/schemes";
-
 import SchemeCard from "./scheme-card";
 
 import type {
   SchemeCategory,
   BeneficiaryGroup,
   SchemeScope,
-  SchemeStatus
+  SchemeStatus,
+  GovernmentScheme
 } from "@/types/scheme";
 
 
@@ -125,6 +124,54 @@ export default function SchemeDirectory() {
   const [sort, setSort] = useState("name-asc");
 
   const [showFilters, setShowFilters] = useState(false);
+  const [schemes, setSchemes] = useState<GovernmentScheme[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [reloadKey, setReloadKey] = useState(0);
+
+  /* LOAD VERIFIED AND PUBLISHED RECORDS FROM FIRESTORE */
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadSchemes() {
+      setIsLoading(true);
+      setLoadError(null);
+
+      try {
+        const response = await fetch("/api/schemes", {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+        const payload = (await response.json()) as {
+          schemes?: GovernmentScheme[];
+          error?: string;
+        };
+
+        if (!response.ok) {
+          throw new Error(payload.error || "Unable to load government schemes.");
+        }
+
+        setSchemes(Array.isArray(payload.schemes) ? payload.schemes : []);
+      } catch (error) {
+        if (error instanceof Error && error.name === "AbortError") return;
+        setLoadError(
+          error instanceof Error
+            ? error.message
+            : "Unable to load government schemes. Please try again.",
+        );
+      } finally {
+        if (!controller.signal.aborted) setIsLoading(false);
+      }
+    }
+
+    void loadSchemes();
+    return () => controller.abort();
+  }, [reloadKey]);
+
+  const availableStates = useMemo(
+    () => Array.from(new Set(schemes.map((scheme) => scheme.state).filter(Boolean))).sort(),
+    [schemes],
+  );
 
 
   /* READ HEADER QUERY PARAMETERS */
@@ -154,7 +201,7 @@ export default function SchemeDirectory() {
 
   const filteredSchemes = useMemo(() => {
 
-    let results = [...governmentSchemes];
+    let results = [...schemes];
 
     const query = search.toLowerCase().trim();
 
@@ -275,7 +322,8 @@ export default function SchemeDirectory() {
     scope,
     state,
     status,
-    sort
+    sort,
+    schemes
   ]);
 
 
@@ -483,7 +531,7 @@ export default function SchemeDirectory() {
         <div className="mx-auto max-w-[1200px]">
 
 
-          {/* DEMO INFORMATION */}
+          {/* SOURCE AND VERIFICATION NOTE */}
 
           <div className="mb-10 flex items-start gap-3 rounded-2xl border border-[#D6B779]/50 bg-[#FBF4E5] p-5">
 
@@ -496,16 +544,16 @@ export default function SchemeDirectory() {
 
               <h3 className="text-sm font-bold text-[#725A2C]">
 
-                Demonstration Government Schemes Directory
+                Reviewed Government Scheme Information
 
               </h3>
 
               <p className="mt-2 text-xs leading-6 text-[#806C44]">
 
-                These records are illustrative examples used for
-                testing BenefitX. They are not actual government
-                scheme announcements. Benefits, eligibility and
-                application details have not been verified.
+                Listings shown here have been reviewed by BenefitX against
+                the official source recorded for each scheme. BenefitX is an
+                independent information platform, not a government portal.
+                Always confirm current details with the relevant authority.
 
               </p>
 
@@ -811,13 +859,11 @@ export default function SchemeDirectory() {
                       All States
                     </option>
 
-                    <option value="All India">
-                      All India
-                    </option>
-
-                    <option value="Maharashtra">
-                      Maharashtra
-                    </option>
+                    {availableStates.map((stateName) => (
+                      <option key={stateName} value={stateName}>
+                        {stateName}
+                      </option>
+                    ))}
 
                   </select>
 
@@ -868,7 +914,7 @@ export default function SchemeDirectory() {
                     </option>
 
                     <option value="not-verified">
-                      Not Verified
+                      Application Status Not Confirmed
                     </option>
 
                   </select>
@@ -893,13 +939,13 @@ export default function SchemeDirectory() {
 
                   <h3 className="text-lg font-bold text-[#123D32]">
 
-                    {filteredSchemes.length} Schemes
+                    {isLoading ? "Loading schemes…" : `${filteredSchemes.length} Schemes`}
 
                   </h3>
 
                   <p className="mt-1 text-xs text-[#7B847D]">
 
-                    Showing matching demonstration records.
+                    Showing verified and published records from BenefitX’s live database.
 
                   </p>
 
@@ -944,7 +990,28 @@ export default function SchemeDirectory() {
 
               {/* SCHEME CARDS */}
 
-              {filteredSchemes.length > 0 ? (
+              {isLoading ? (
+
+                <div className="rounded-3xl border border-[#E4E8E0] bg-white px-6 py-16 text-center">
+                  <div className="mx-auto h-10 w-10 animate-spin rounded-full border-4 border-[#167A5B] border-t-transparent" />
+                  <p className="mt-5 text-sm font-semibold text-[#59665F]">Loading verified government schemes…</p>
+                </div>
+
+              ) : loadError ? (
+
+                <div className="rounded-3xl border border-red-200 bg-white px-6 py-12 text-center">
+                  <h3 className="text-xl font-bold text-[#123D32]">Unable to load schemes</h3>
+                  <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-[#718077]">{loadError}</p>
+                  <button
+                    type="button"
+                    onClick={() => setReloadKey((value) => value + 1)}
+                    className="mt-6 rounded-xl bg-[#075B46] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#123D32]"
+                  >
+                    Try Again
+                  </button>
+                </div>
+
+              ) : filteredSchemes.length > 0 ? (
 
                 <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
 
@@ -974,26 +1041,24 @@ export default function SchemeDirectory() {
 
                   <h3 className="mt-6 text-xl font-bold text-[#123D32]">
 
-                    No Schemes Found
+                    {schemes.length === 0 ? "No Schemes Published Yet" : "No Schemes Found"}
 
                   </h3>
 
                   <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-[#718077]">
 
-                    We couldn't find schemes matching your
-                    selected criteria. Try another category
-                    or remove some filters.
+                    {schemes.length === 0
+                      ? "There are no verified government schemes available right now. Please check back after new opportunities are reviewed and published."
+                      : "We couldn't find schemes matching your selected criteria. Try another category or remove some filters."}
 
                   </p>
 
                   <button
                     type="button"
-                    onClick={resetFilters}
+                    onClick={schemes.length === 0 ? () => setReloadKey((value) => value + 1) : resetFilters}
                     className="mt-6 rounded-xl bg-[#075B46] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#123D32]"
                   >
-
-                    Clear All Filters
-
+                    {schemes.length === 0 ? "Reload Schemes" : "Clear All Filters"}
                   </button>
 
                 </div>

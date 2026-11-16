@@ -1,0 +1,819 @@
+[
+  {
+    "title": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "slug": "pradhan-mantri-kisan-samman-nidhi-pm-kisan",
+    "provider": "Department of Agriculture and Farmers Welfare, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "categories": [
+      "agriculture"
+    ],
+    "beneficiaryGroups": [
+      "farmers",
+      "families"
+    ],
+    "description": "A Central Sector scheme that provides income support to eligible landholding farmer families. The official PM-KISAN portal currently describes assistance of ₹6,000 per year in three equal instalments, subject to scheme guidelines and exclusion rules.",
+    "objective": "Supplement the financial needs of eligible landholding farmer families for agricultural inputs and household needs.",
+    "benefits": [
+      "₹6,000 per year in three equal instalments, transferred directly to eligible beneficiaries' bank accounts, subject to official guidelines."
+    ],
+    "eligibilityCriteria": [
+      "Farmer family holding cultivable land as recorded in land records, subject to exclusions and verification under current PM-KISAN guidelines."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "₹6,000 per year in three equal instalments; confirm current beneficiary and exclusion rules on the official portal.",
+    "officialPortalName": "PM-KISAN official portal",
+    "sourceUrl": "https://pmkisan.gov.in/",
+    "sourceNotes": "Portal search result checked 17 Nov 2026; the portal displayed 24th instalment information dated 30 Oct 2026. Recheck current e-KYC and exclusion rules before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "slug": "pradhan-mantri-fasal-bima-yojana-pmfby",
+    "provider": "Department of Agriculture and Farmers Welfare, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India (notified crops and areas)",
+    "categories": [
+      "agriculture"
+    ],
+    "beneficiaryGroups": [
+      "farmers"
+    ],
+    "description": "A crop insurance scheme intended to support farmers who experience crop loss or damage due to notified unforeseen events. Coverage depends on the notified crop, area, season and applicable operational guidelines.",
+    "objective": "Provide financial support after notified crop losses, stabilise farm income and encourage continuity of agricultural activity.",
+    "benefits": [
+      "Crop insurance protection for eligible notified crops and risks; premium, sum insured and claim conditions vary by crop, season and notification."
+    ],
+    "eligibilityCriteria": [
+      "Farmers, including eligible sharecroppers and tenant farmers, cultivating notified crops in notified areas and having insurable interest; verify the applicable season notification."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Risk and sum insured depend on notified crop, area and season; no single fixed benefit amount.",
+    "officialPortalName": "Pradhan Mantri Fasal Bima Yojana portal",
+    "sourceUrl": "https://pmfby.gov.in/",
+    "sourceNotes": "Official PMFBY operational guidelines located; verify the current season's state crop notification and application window before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "PMKSY – Per Drop More Crop (Micro-Irrigation Component)",
+    "slug": "pmksy-per-drop-more-crop-micro-irrigation-maharashtra",
+    "provider": "Agriculture Department, Government of Maharashtra",
+    "providerType": "Central scheme implemented through Maharashtra",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "agriculture"
+    ],
+    "beneficiaryGroups": [
+      "farmers"
+    ],
+    "description": "The micro-irrigation component supports adoption of water-saving irrigation systems and improved on-farm water-use efficiency. Maharashtra's MahaDBT Farmer Portal publishes the component's scheme details and application instructions.",
+    "objective": "Improve water-use efficiency, expand irrigated cultivation and promote micro-irrigation technologies.",
+    "benefits": [
+      "The Maharashtra portal states a 55% subsidy rate for small and marginal farmers and 45% for other farmers, subject to the portal's current rules and component limits."
+    ],
+    "eligibilityCriteria": [
+      "Applicant must be a farmer in Maharashtra and satisfy the portal's land, Aadhaar, electricity-connection, area and prior-benefit conditions for the selected component."
+    ],
+    "requiredDocuments": [
+      "Aadhaar card",
+      "7/12 extract",
+      "8-A extract",
+      "Recent electricity bill for the pump connection",
+      "Purchase invoice and pre-sanction letter where applicable"
+    ],
+    "applicationSteps": [
+      "Register and apply through the MahaDBT Farmer Portal.",
+      "Wait for pre-sanction before purchasing the approved micro-irrigation system.",
+      "Purchase from an authorised seller, install the system and upload the invoice within the stated period in the portal."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Portal lists subsidy rates of 55% for small/marginal farmers and 45% for other farmers; subject to current component rules.",
+    "officialPortalName": "MahaDBT Farmer Portal – Scheme Data",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AC7B56240D6D84F28",
+    "sourceNotes": "Specific Maharashtra scheme page reviewed 17 Nov 2026. Recheck current FCFS window, component limits and subsidy caps before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "State Agriculture Mechanization Scheme",
+    "slug": "maharashtra-state-agriculture-mechanization-scheme",
+    "provider": "Agriculture Department, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "agriculture"
+    ],
+    "beneficiaryGroups": [
+      "farmers"
+    ],
+    "description": "A Maharashtra Agriculture Department scheme providing financial assistance for purchase of eligible farm machinery and implements, and support for custom-hiring/farm equipment facilities, under the current component rules.",
+    "objective": "Promote agricultural mechanisation and improve access to farm machinery, particularly in areas with low farm-power use and among small and marginal farmers.",
+    "benefits": [
+      "Financial assistance is available for eligible equipment such as tractors, power tillers, tractor/power-tiller-operated implements, bullock-operated and manually operated implements, processing equipment, post-harvest equipment and horticulture implements. Component-specific limits must be checked in the official benefit schedule."
+    ],
+    "eligibilityCriteria": [
+      "Applicant must be a farmer with Aadhaar and current 7/12 and 8-A land records.",
+      "A valid caste certificate is required for applicants claiming Scheduled Caste / Scheduled Tribe category benefits.",
+      "The portal states that the applicant is generally eligible for assistance for only one implement in the relevant selection, and repeat assistance for the same implement/component is restricted for 10 years; confirm current component-specific conditions."
+    ],
+    "requiredDocuments": [
+      "Aadhaar card",
+      "7/12 extract",
+      "8-A extract",
+      "Quotation for the implement and inspection report from an approved testing institution",
+      "Caste certificate where applicable",
+      "Self-declaration",
+      "Pre-sanction letter"
+    ],
+    "applicationSteps": [
+      "Register and apply through the MahaDBT Farmer Portal.",
+      "Select the applicable machinery/component and submit the required records.",
+      "Wait for the portal/department pre-sanction before purchase.",
+      "Follow the current portal instructions for purchase, installation and claim submission."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": null,
+    "officialPortalName": "MahaDBT Farmer Portal – Scheme Data",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A147B39AD4D6A9082",
+    "sourceNotes": "Specific official MahaDBT scheme page reviewed 17 Nov 2026. Portal lists eligible machinery types, documents and 10-year repeat restriction; exact subsidy amounts are published in a separate benefit schedule and must be checked for the chosen item before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Birsa Munda Krishi Kranti Yojana",
+    "slug": "birsa-munda-krishi-kranti-yojana-maharashtra",
+    "provider": "Agriculture Department, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "agriculture",
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "farmers"
+    ],
+    "description": "A Maharashtra Agriculture Department scheme for Scheduled Tribe farmers, with assistance for irrigation and farm-development components. The MahaDBT page states that a revised version is being implemented for financial year 2026–27.",
+    "objective": "Increase income and improve living standards of Scheduled Tribe farmers through eligible farm irrigation and related assistance.",
+    "benefits": [
+      "For 2026–27, the official portal lists component-wise ceilings including new irrigation well up to ₹4,00,000; old-well repair up to ₹1,00,000; selected pump, solar-pump, pipe, farm-pond lining and micro-irrigation assistance; and other listed farm components. The cap depends on component and actual cost.",
+      "The portal lists supplementary micro-irrigation top-up assistance subject to an overall 90% subsidy cap and separate drip/sprinkler ceilings."
+    ],
+    "eligibilityCriteria": [
+      "Applicant must be a Scheduled Tribe farmer.",
+      "A valid caste certificate from the competent authority is required.",
+      "Farmer ID and landholding records (7/12 and 8-A) in the farmer’s name are required, subject to the stated geographic conditions."
+    ],
+    "requiredDocuments": [
+      "Farmer ID / 7/12 and 8-A land records",
+      "Valid Scheduled Tribe caste certificate",
+      "Consent / undertaking as applicable",
+      "MSEDCL quotation / test report for relevant electricity or irrigation components",
+      "Disability certificate where applicable"
+    ],
+    "applicationSteps": [
+      "Register and apply through the MahaDBT Farmer Portal.",
+      "Choose the eligible scheme component and upload the required category, land and component documents.",
+      "Follow the current department scrutiny and pre-sanction process before starting the approved work or purchasing equipment."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Component-specific 2026–27 ceilings; examples include new well up to ₹4,00,000 and old well repair up to ₹1,00,000. Check the current component schedule.",
+    "officialPortalName": "MahaDBT Farmer Portal – Scheme Data",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51ACA98B76653871714",
+    "sourceNotes": "MahaDBT official scheme page explicitly identifies FY 2026–27 and lists the component ceilings and ST eligibility. Verify the current GR, applicant land conditions and district applicability before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Dr. Babasaheb Ambedkar Krushi Swavalamban Yojana",
+    "slug": "dr-babasaheb-ambedkar-krushi-swavalamban-yojana",
+    "provider": "Agriculture Department, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "agriculture",
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "farmers"
+    ],
+    "description": "A Maharashtra Agriculture Department scheme for eligible Scheduled Caste / Nav-Buddhist farmers, supporting sustainable irrigation and farm-development components.",
+    "objective": "Improve agricultural income by supporting sustainable irrigation facilities and retaining soil moisture for eligible farmers.",
+    "benefits": [
+      "The MahaDBT scheme page lists component assistance such as new well ₹2.50 lakh, old-well repair ₹50,000, in-well boring ₹20,000, pump set ₹20,000, electricity connection ₹10,000, farm-pond lining ₹1 lakh, drip irrigation set ₹50,000 or sprinkler set ₹25,000, PVC pipe ₹30,000 and kitchen garden ₹500, subject to scheme limits.",
+      "The scheme page lists several Maharashtra districts as excluded; confirm current district eligibility before publication."
+    ],
+    "eligibilityCriteria": [
+      "Applicant must belong to the Scheduled Caste category and submit a valid caste certificate.",
+      "Annual family income limit stated on the portal: up to ₹1,50,000.",
+      "Landholding stated on the portal: 0.20 to 6 hectares; minimum 0.40 hectares for a new well.",
+      "The scheme page states it is implemented except in Mumbai, Sindhudurg, Ratnagiri, Satara, Sangli and Kolhapur districts; reconfirm current district conditions."
+    ],
+    "requiredDocuments": [
+      "Valid Scheduled Caste certificate",
+      "7/12 and 8-A land extracts",
+      "Previous-year annual income certificate from the Tahsildar",
+      "Beneficiary affidavit / undertaking",
+      "Additional component-specific documents such as Gram Sabha resolution, water-availability certificate, site photographs and officer recommendation where required"
+    ],
+    "applicationSteps": [
+      "Register and apply through the MahaDBT Farmer Portal.",
+      "Select the relevant scheme component and upload caste, income, land and component-specific documents.",
+      "Wait for departmental scrutiny and pre-sanction before starting the approved work or purchasing equipment."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Component-specific amounts listed on the official portal; examples include ₹2.50 lakh for a new well, ₹50,000 for well repair and ₹50,000 for drip irrigation.",
+    "officialPortalName": "MahaDBT Farmer Portal – Scheme Data",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A986837A04E50D9EF",
+    "sourceNotes": "Specific official MahaDBT page reviewed 17 Nov 2026. District exclusion, income cap, landholding range and listed component amounts are from the current page; recheck current GR and district limits before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Bhausaheb Fundkar Phalbaag Lagvad Yojana",
+    "slug": "bhausaheb-fundkar-phalbaag-lagvad-yojana",
+    "provider": "Agriculture Department, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "agriculture"
+    ],
+    "beneficiaryGroups": [
+      "farmers"
+    ],
+    "description": "A Maharashtra Agriculture Department orchard-plantation scheme for individual farmers who meet the scheme’s land, plantation and drip-irrigation conditions. The portal notes its relationship with the fruit-orchard benefit available under MGNREGA.",
+    "objective": "Support fruit orchard plantation for eligible farmers who cannot take the relevant orchard-plantation benefit under MGNREGA.",
+    "benefits": [
+      "Approved subsidy is paid over three years in a 50% / 30% / 20% instalment pattern, subject to survival of the required proportion of planted trees.",
+      "The portal states 100% subsidy for installation of the drip-irrigation set under this scheme, subject to its rules."
+    ],
+    "eligibilityCriteria": [
+      "Individual farmer; institutional applicants are not eligible.",
+      "Farmer must hold land in their own name in the 7/12 record; joint holders’ consent is required for joint land.",
+      "Minimum/maximum area: Konkan division 10 guntha to 10 hectares; other divisions 20 guntha to 6 hectares.",
+      "Drip irrigation installation is mandatory.",
+      "The portal gives priority to small/marginal, women and disabled farmers and requires the specified tree-survival percentage for later instalments."
+    ],
+    "requiredDocuments": [
+      "7/12 and 8-A extracts",
+      "Undertaking",
+      "Consent of all holders for jointly held land",
+      "Caste certificate for SC/ST applicants"
+    ],
+    "applicationSteps": [
+      "Apply through the MahaDBT Farmer Portal.",
+      "Check eligible crops, plantation area and current Government Resolution before planting.",
+      "Install the required drip-irrigation system and maintain the prescribed survival percentage to receive later instalments."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Three-year subsidy pattern 50% / 30% / 20%; the page separately states 100% subsidy for the drip set, subject to current rules.",
+    "officialPortalName": "MahaDBT Farmer Portal – Scheme Data",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AD8FABF0B538FA508",
+    "sourceNotes": "Specific MahaDBT scheme page reviewed 17 Nov 2026. The scheme page states area thresholds, drip requirement, 3-year instalment proportions and survival conditions. Verify current crop list and GR before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Namo Shetkari Mahasanman Nidhi Yojana",
+    "slug": "namo-shetkari-mahasanman-nidhi-yojana",
+    "provider": "Agriculture Department, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "agriculture"
+    ],
+    "beneficiaryGroups": [
+      "farmers",
+      "families"
+    ],
+    "description": "A Maharashtra farmer-support scheme listed on the official MahaDBT portal. The current state government resolution and scheme instructions must be checked for beneficiary matching, instalment rules and exclusions.",
+    "objective": "Provide state-level income support to eligible farmer families under the scheme's current rules.",
+    "benefits": [],
+    "eligibilityCriteria": [
+      "The scheme is listed for Maharashtra farmers; verify current PM-KISAN linkage, land-record and exclusion conditions from the latest state notification."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": null,
+    "officialPortalName": "MahaDBT Maharashtra – Farmer Schemes",
+    "sourceUrl": "https://mahadbt.maharashtra.gov.in/home",
+    "sourceNotes": "MahaDBT lists Namo Shetkari Mahasanman Nidhi Yojana under Farmer Schemes. Obtain the current GR/payment instructions before entering benefit amounts or publishing.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "slug": "pradhan-mantri-matru-vandana-yojana-pmmvy",
+    "provider": "Ministry of Women and Child Development, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "categories": [
+      "women-child"
+    ],
+    "beneficiaryGroups": [
+      "women",
+      "children",
+      "families"
+    ],
+    "description": "A maternity benefit scheme that provides eligible pregnant women and lactating mothers with direct cash assistance, subject to the eligibility categories and conditions published by the Ministry of Women and Child Development.",
+    "objective": "Provide partial wage-loss compensation and encourage health-seeking behaviour among pregnant women and lactating mothers.",
+    "benefits": [
+      "The Ministry page describes ₹5,000 for the first child in two instalments and ₹6,000 for the second child if the second child is a girl, subject to scheme conditions."
+    ],
+    "eligibilityCriteria": [
+      "Pregnant women and lactating mothers in the target age range who fall within one of the notified disadvantaged/eligible categories; exclusions and timing conditions apply."
+    ],
+    "requiredDocuments": [
+      "Beneficiary Aadhaar",
+      "Mother and Child Protection (MCP)/RCHI card",
+      "One document proving an eligible category, as listed by the Ministry"
+    ],
+    "applicationSteps": [
+      "Apply through the official PMMVY portal or seek help from the nearest Anganwadi Worker / ASHA worker.",
+      "Complete pregnancy registration, antenatal-care and post-birth immunisation conditions applicable to the instalment."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "₹5,000 for first child; ₹6,000 for second child if girl, subject to current PMMVY rules.",
+    "officialPortalName": "Ministry of Women and Child Development – PMMVY",
+    "sourceUrl": "https://www.wcd.gov.in/public/women/pradhan-mantri-matru-vandana-yojna",
+    "sourceNotes": "Ministry official page/FAQ reviewed 17 Nov 2026. Recheck latest state workflow, beneficiary categories and required evidence before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Ayushman Bharat – Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)",
+    "slug": "ayushman-bharat-pm-jay",
+    "provider": "National Health Authority, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India (subject to scheme/state implementation)",
+    "categories": [
+      "healthcare"
+    ],
+    "beneficiaryGroups": [
+      "families",
+      "senior-citizens",
+      "general-public"
+    ],
+    "description": "A publicly funded health assurance scheme providing cashless secondary and tertiary hospitalisation cover to eligible beneficiaries at empanelled public and private hospitals. The programme also covers all senior citizens aged 70 years or above, irrespective of income, under the senior-citizen expansion.",
+    "objective": "Reduce out-of-pocket expenditure for eligible families by providing access to hospitalisation services.",
+    "benefits": [
+      "Up to ₹5 lakh per eligible family per year for covered hospitalisation services.",
+      "Senior citizens aged 70 years or above are eligible irrespective of income; enrolment and card conditions apply."
+    ],
+    "eligibilityCriteria": [
+      "For the general population, eligibility is based on the applicable PM-JAY beneficiary database and rules.",
+      "All individuals aged 70 years or above are eligible under the senior-citizen expansion, irrespective of income; Aadhaar-based e-KYC is required for enrolment."
+    ],
+    "requiredDocuments": [
+      "Aadhaar for senior-citizen enrolment; other beneficiary identification documents depend on the applicable beneficiary-verification workflow."
+    ],
+    "applicationSteps": [
+      "Check eligibility through the official beneficiary portal or Ayushman App.",
+      "Complete the applicable beneficiary verification/e-KYC process and obtain the Ayushman card."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Up to ₹5 lakh per eligible family per year for covered hospitalisation services.",
+    "officialPortalName": "National Health Authority – Ayushman Bharat PM-JAY",
+    "sourceUrl": "https://nha.gov.in/PM-JAY",
+    "sourceNotes": "NHA senior-citizen FAQ and official scheme material reviewed. Confirm the current Maharashtra State Health Agency process and beneficiary portal links before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Pradhan Mantri Awaas Yojana – Gramin (PMAY-G)",
+    "slug": "pradhan-mantri-awas-yojana-gramin-pmay-g",
+    "provider": "Ministry of Rural Development, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India (rural areas)",
+    "categories": [
+      "housing",
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "families",
+      "general-public",
+      "workers"
+    ],
+    "description": "A rural housing programme providing assistance to eligible rural households for construction of pucca houses with basic amenities. The Union Cabinet approved continuation for FY 2024–25 to 2028–29, subject to the programme's beneficiary identification and exclusion process.",
+    "objective": "Support eligible rural households to obtain a pucca house with basic amenities.",
+    "benefits": [
+      "The official continuation letter states unit assistance of ₹1.20 lakh in plain areas and ₹1.30 lakh in North-Eastern / hill states, subject to programme rules."
+    ],
+    "eligibilityCriteria": [
+      "Rural households identified through the applicable SECC/Awaas+ beneficiary lists and the revised exclusion criteria; final selection is subject to government verification."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Check beneficiary selection/status through the official PMAY-G system and local Gram Panchayat / rural development office.",
+      "Follow the State/UT beneficiary verification and sanction process."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "₹1.20 lakh in plain areas; ₹1.30 lakh in North-Eastern / hill states, per the approved continuation communication.",
+    "officialPortalName": "PMAY-G official portal",
+    "sourceUrl": "https://pmayg.dord.gov.in/",
+    "sourceNotes": "Government of India continuation approval for FY 2024–25 to 2028–29 reviewed. Recheck current beneficiary lists and Maharashtra-specific processing before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Pradhan Mantri Awas Yojana – Urban 2.0 (PMAY-U 2.0)",
+    "slug": "pradhan-mantri-awas-yojana-urban-2-0",
+    "provider": "Ministry of Housing and Urban Affairs, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India (urban areas)",
+    "categories": [
+      "housing",
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "families",
+      "general-public",
+      "women",
+      "persons-with-disabilities",
+      "senior-citizens"
+    ],
+    "description": "The PMAY-U 2.0 Housing for All mission supports eligible urban households through beneficiary-led construction, affordable housing in partnership, affordable rental housing and an interest-subsidy vertical.",
+    "objective": "Provide central assistance to eligible urban households to construct, purchase or rent affordable housing.",
+    "benefits": [
+      "Assistance is delivered through the scheme's applicable verticals; the type and amount depend on the vertical, beneficiary and approved guidelines."
+    ],
+    "eligibilityCriteria": [
+      "EWS households with annual income up to ₹3 lakh, LIG households with income above ₹3 lakh up to ₹6 lakh, and MIG households with income above ₹6 lakh up to ₹9 lakh, subject to the current guidelines.",
+      "The beneficiary family must not own a pucca house anywhere in India; prior housing-scheme benefit restrictions apply."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Contact the relevant Urban Local Body or participating Primary Lending Institution, depending on the PMAY-U 2.0 vertical.",
+      "Complete beneficiary validation and the application process prescribed for the selected vertical."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Varies by vertical and beneficiary category; check current PMAY-U 2.0 operational guidelines.",
+    "officialPortalName": "PMAY-U 2.0 official portal",
+    "sourceUrl": "https://pmay-urban.gov.in/",
+    "sourceNotes": "Official PMAY-U 2.0 operational guidelines reviewed. Recheck current state/ULB implementation and vertical-specific assistance before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "PM SVANidhi – Prime Minister Street Vendor's AtmaNirbhar Nidhi",
+    "slug": "pm-svanidhi-street-vendor-working-capital",
+    "provider": "Ministry of Housing and Urban Affairs, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India (eligible urban local bodies)",
+    "categories": [
+      "business",
+      "employment",
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "workers",
+      "entrepreneurs"
+    ],
+    "description": "A central scheme intended to provide working-capital support and incentives to eligible street vendors. Current loan tranches, extension period and incentive rules must be taken from the latest official scheme portal and circulars.",
+    "objective": "Support street vendors' access to working capital and encourage timely repayment and digital transactions.",
+    "benefits": [
+      "The current PM SVANidhi portal displays loan application tranches of ₹15,000, ₹25,000 and ₹50,000, alongside a credit-card facility for eligible vendors who repaid the second tranche. Confirm the specific tranche and current benefit conditions for each applicant."
+    ],
+    "eligibilityCriteria": [
+      "Street vendors in States/UTs that have notified the relevant rules under the Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014.",
+      "The applicant must satisfy the current vendor identification / survey and portal verification process; Census Town vendors are now also included according to the current portal notice."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Check eligibility and the relevant urban local body / survey status on the PM SVANidhi portal.",
+      "Apply online using the available Aadhaar-based or non-Aadhaar flow as provided by the portal.",
+      "Complete digital verification and follow the lender process."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Current portal shows ₹15,000, ₹25,000 and ₹50,000 loan application tranches; verify the applicant-specific tranche and live scheme conditions.",
+    "officialPortalName": "PM SVANidhi official portal",
+    "sourceUrl": "https://pmsvanidhi.mohua.gov.in/",
+    "sourceNotes": "Official PM SVANidhi portal reviewed 17 Nov 2026; portal says enhanced loan limits are live, Census Town vendors are also eligible, and displays ₹15k/₹25k/₹50k application options. Portal last updated 29 Oct 2026.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Maharashtra Apprenticeship Promotion Scheme (MAPS)",
+    "slug": "maharashtra-apprenticeship-promotion-scheme-maps",
+    "provider": "Commissionerate of MSME, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "employment",
+      "business"
+    ],
+    "beneficiaryGroups": [
+      "entrepreneurs",
+      "workers"
+    ],
+    "description": "A Maharashtra scheme that supports eligible establishments in engaging apprentices by reimbursing a share of the stipend, subject to guidelines and approval of claims.",
+    "objective": "Reduce the cost to eligible establishments of training apprentices and develop a skilled workforce.",
+    "benefits": [
+      "The Maharashtra MSME Commissionerate states support equal to 75% of the stipend or ₹5,000 per apprentice per month, whichever is lower, subject to applicable guidelines and claim approval."
+    ],
+    "eligibilityCriteria": [
+      "The establishment must be an eligible enterprise operating in Maharashtra and meet the scheme's apprenticeship and workforce conditions."
+    ],
+    "requiredDocuments": [
+      "Udyam Registration Certificate",
+      "PAN of the enterprise",
+      "GST registration where applicable",
+      "Business constitution / establishment registration proof",
+      "Applicable business licence and workplace address proof"
+    ],
+    "applicationSteps": [
+      "Register the establishment through the official apprenticeship facilities of the Directorate of Vocational Education and Training, Maharashtra.",
+      "Submit establishment, workforce and bank details and follow the prescribed claim process."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "75% of stipend or maximum ₹5,000 per apprentice per month, whichever is lower, subject to current rules and approved claims.",
+    "officialPortalName": "Maharashtra Commissionerate of MSME – MAPS",
+    "sourceUrl": "https://msme.maharashtra.gov.in/scheme/maharashtra-apprenticeship-promotion-scheme-maps/",
+    "sourceNotes": "Official Maharashtra MSME scheme page reviewed; it was listed with a 20 Oct 2026 publication date in the department's scheme directory. Verify whether new establishment claims are currently accepted.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Pradhan Mantri Shram Yogi Maan-Dhan Yojana (PM-SYM)",
+    "slug": "pradhan-mantri-shram-yogi-maan-dhan-pm-sym",
+    "provider": "Ministry of Labour and Employment, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "categories": [
+      "employment",
+      "social-welfare",
+      "senior-citizens"
+    ],
+    "beneficiaryGroups": [
+      "workers"
+    ],
+    "description": "A voluntary contributory pension scheme for eligible unorganised workers. The worker and the Central Government contribute matching amounts during the contribution period.",
+    "objective": "Provide old-age income security to eligible unorganised workers.",
+    "benefits": [
+      "Assured monthly pension of ₹3,000 after the subscriber reaches age 60, subject to scheme rules.",
+      "The Central Government makes a matching contribution equal to the worker's contribution."
+    ],
+    "eligibilityCriteria": [
+      "Indian citizen working in the unorganised sector.",
+      "Entry age 18–40 years and monthly income below ₹15,000.",
+      "Must not be covered by EPFO, ESIC or NPS (government-funded), subject to scheme rules."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Check eligibility and enrol through an authorised Common Service Centre or the official Maandhan channel.",
+      "Pay the age-based monthly contribution and maintain the linked contribution arrangement."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Assured ₹3,000 monthly pension after age 60; contribution varies by entry age.",
+    "officialPortalName": "e-Shram / Maandhan official scheme information",
+    "sourceUrl": "https://www.eshram.gov.in/Schemes",
+    "sourceNotes": "Ministry of Labour & Employment e-Shram scheme page reviewed. Confirm the current enrolment and contribution table on Maandhan before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "slug": "pradhan-mantri-suraksha-bima-yojana-pmsby",
+    "provider": "Department of Financial Services, Ministry of Finance, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "categories": [
+      "social-welfare",
+      "disability"
+    ],
+    "beneficiaryGroups": [
+      "general-public",
+      "workers",
+      "families",
+      "persons-with-disabilities"
+    ],
+    "description": "A renewable one-year personal accident insurance scheme offered through participating banks and insurers for eligible account holders.",
+    "objective": "Provide low-cost accident insurance protection against death and specified disability caused by an accident.",
+    "benefits": [
+      "₹2 lakh for accidental death and specified total disability.",
+      "₹1 lakh for specified partial disability.",
+      "Official FAQ states an annual premium of ₹20, subject to current notifications."
+    ],
+    "eligibilityCriteria": [
+      "Individual account holders of participating banks/post offices aged 18–70 years; enrolment requires consent for premium auto-debit and is subject to scheme rules."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Enrol through a participating bank or post office using the current PMSBY enrolment form and auto-debit consent."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "₹2 lakh for accidental death / specified total disability; ₹1 lakh for specified partial disability. Annual premium stated as ₹20 in the official FAQ.",
+    "officialPortalName": "Jan Suraksha – PMSBY",
+    "sourceUrl": "https://www.jansuraksha.gov.in/",
+    "sourceNotes": "Department of Financial Services official PMSBY FAQ and forms portal checked. Confirm current premium and annual renewal terms before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Atal Pension Yojana (APY)",
+    "slug": "atal-pension-yojana-apy",
+    "provider": "Department of Financial Services / Pension Fund Regulatory and Development Authority, Government of India",
+    "providerType": "Central Government",
+    "scope": "central",
+    "state": "All India",
+    "categories": [
+      "senior-citizens",
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "workers",
+      "general-public"
+    ],
+    "description": "A contributory pension scheme for eligible Indian citizens, providing a guaranteed minimum pension choice after age 60 in return for periodic contributions.",
+    "objective": "Encourage pension coverage and provide minimum guaranteed old-age pension to eligible subscribers.",
+    "benefits": [
+      "Subscriber can choose a guaranteed minimum pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000 or ₹5,000 per month after age 60, subject to scheme rules."
+    ],
+    "eligibilityCriteria": [
+      "Indian citizen aged 18–40 years with a savings bank or post-office savings account.",
+      "A person who is or has been an income-tax payer is not eligible to join APY from 1 Oct 2022."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Enrol through a bank branch, post office or an authorised digital onboarding facility.",
+      "Provide nomination and spouse details and maintain periodic auto-debit contributions."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Guaranteed minimum pension choice of ₹1,000–₹5,000 per month after age 60, subject to contribution and scheme rules.",
+    "officialPortalName": "NPS CRA – Atal Pension Yojana",
+    "sourceUrl": "https://npscra.nsdl.co.in/",
+    "sourceNotes": "NPS CRA APY subscriber brochure and e-Shram scheme listing reviewed. Recheck latest eligibility and onboarding guidance before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Shravan Bal Seva Rajya Nivruttivetan Yojana",
+    "slug": "shravan-bal-seva-rajya-nivruttivetan-yojana",
+    "provider": "Social Justice and Special Assistance Department, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "senior-citizens",
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "senior-citizens"
+    ],
+    "description": "A Maharashtra state pension assistance scheme for eligible elderly residents who meet the published BPL or income condition.",
+    "objective": "Provide monthly financial assistance to eligible elderly people with limited means.",
+    "benefits": [
+      "The Maharashtra department page states assistance of ₹1,500 per month."
+    ],
+    "eligibilityCriteria": [
+      "Age 65 years or above, with name on the BPL list or annual family income below ₹21,000, as stated on the department page."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Apply through the Collector's Office, Tehsildar's Office, Sanjay Gandhi Niradhar Anudan Yojana branch or Talathi Office, as stated by the department."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "₹1,500 per month according to the Maharashtra department page; reconfirm current amount and income ceiling before publication.",
+    "officialPortalName": "Maharashtra Social Justice and Special Assistance Department",
+    "sourceUrl": "https://sjsa.maharashtra.gov.in/en/scheme/shravan-bal-rajya-nivruttivetan-yojana/",
+    "sourceNotes": "Official department page states eligibility, benefit and application offices; page last-updated marker shows 25 Apr 2025. Reconfirm current norms.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "Sanjay Gandhi Niradhar Anudan Yojana",
+    "slug": "sanjay-gandhi-niradhar-anudan-yojana",
+    "provider": "Social Justice and Special Assistance Department, Government of Maharashtra",
+    "providerType": "Maharashtra Government",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "social-welfare",
+      "disability",
+      "women-child"
+    ],
+    "beneficiaryGroups": [
+      "women",
+      "children",
+      "persons-with-disabilities",
+      "families",
+      "general-public"
+    ],
+    "description": "A Maharashtra assistance scheme covering specified destitute and vulnerable persons, including eligible widows, orphaned children, persons with disabilities and other listed groups, subject to the department's income/BPL conditions.",
+    "objective": "Provide financial assistance to eligible vulnerable individuals who cannot adequately support themselves.",
+    "benefits": [
+      "The department scheme information reports financial assistance of ₹1,500 per month; confirm current payment structure and category rules before publication."
+    ],
+    "eligibilityCriteria": [
+      "The official page lists specified destitute persons and vulnerable categories, including persons aged 18–65 in relevant categories.",
+      "The beneficiary must be on the BPL list or the family annual income must be up to ₹21,000, as stated on the department page."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Apply at the District Collector's Office, Tehsildar's Office, scheme branch or Talathi Office, as specified by the department."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "Department page reports ₹1,500 per month; confirm current amount and beneficiary-category rules before publication.",
+    "officialPortalName": "Maharashtra Social Justice and Special Assistance Department",
+    "sourceUrl": "https://sjsa.maharashtra.gov.in/en/scheme/sanjay-gandhi-niradhar-anudan-yojana/",
+    "sourceNotes": "Official department page reviewed. Last-updated marker and current payment split should be checked with current GR before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  },
+  {
+    "title": "National Family Benefit Scheme",
+    "slug": "national-family-benefit-scheme-nfbs",
+    "provider": "Social Justice and Special Assistance Department / National Social Assistance Programme",
+    "providerType": "Centrally Sponsored Scheme implemented by Maharashtra",
+    "scope": "state",
+    "state": "Maharashtra",
+    "categories": [
+      "social-welfare"
+    ],
+    "beneficiaryGroups": [
+      "families",
+      "general-public"
+    ],
+    "description": "A one-time family assistance scheme for an eligible BPL household after the natural or accidental death of its primary breadwinner, subject to the age conditions stated by the department.",
+    "objective": "Provide immediate financial assistance to an eligible BPL family after the death of its primary breadwinner.",
+    "benefits": [
+      "The Maharashtra department page states a one-time lump-sum assistance of ₹20,000."
+    ],
+    "eligibilityCriteria": [
+      "The primary breadwinner must have been aged 18–59 years at death and the affected family must be BPL, according to the department page."
+    ],
+    "requiredDocuments": [],
+    "applicationSteps": [
+      "Apply at the Collector's Office, Tehsildar's Office, scheme branch or Talathi Office, as stated by the department."
+    ],
+    "applicationStatus": "not-verified",
+    "applicationStartDate": null,
+    "deadline": null,
+    "benefitAmount": "One-time assistance of ₹20,000 according to the Maharashtra department page.",
+    "officialPortalName": "Maharashtra Social Justice and Special Assistance Department / NSAP",
+    "sourceUrl": "https://sjsa.maharashtra.gov.in/en/scheme/national-family-benefit-scheme/",
+    "sourceNotes": "Official Maharashtra department scheme page reviewed; page last-updated marker shows 29 Apr 2025. Confirm current amount, claim timing and required documents before publication.",
+    "verificationStatus": "pending",
+    "publicationStatus": "draft"
+  }
+]

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -70,7 +70,16 @@ export default function RootLayout({
 
           <div className="flex min-h-screen flex-col">
 
-            <SiteHeader />
+            <Suspense
+              fallback={
+                <div
+                  aria-hidden="true"
+                  className="h-[82px] w-full border-b border-[#E4E8E0] bg-white"
+                />
+              }
+            >
+              <SiteHeader />
+            </Suspense>
 
             <main className="flex-1">
 

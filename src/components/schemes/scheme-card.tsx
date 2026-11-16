@@ -91,7 +91,7 @@ const statusLabels = {
 
   closed: "Application Closed",
 
-  "not-verified": "Not Verified"
+  "not-verified": "Application Status Not Confirmed"
 
 };
 
@@ -125,7 +125,7 @@ export default function SchemeCard({
 
           <span className="rounded-full border border-[#D6B779]/60 bg-white/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-[#876A2F]">
 
-            Demo Listing
+            BenefitX Reviewed
 
           </span>
 
@@ -277,7 +277,7 @@ export default function SchemeCard({
               className="text-[#B8954B]"
             />
 
-            {scheme.benefitAmount ?? "Benefit amount not verified"}
+            {scheme.benefitAmount ?? "See official source for benefit details"}
 
           </div>
 
@@ -289,7 +289,7 @@ export default function SchemeCard({
               className="text-[#B8954B]"
             />
 
-            {scheme.deadline ?? "Deadline not verified"}
+            {scheme.deadline ?? "No fixed deadline listed"}
 
           </div>
 

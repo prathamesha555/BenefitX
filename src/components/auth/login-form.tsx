@@ -132,17 +132,14 @@ export default function LoginForm() {
     }
 
 
-    // Redirect according to role.
+    // Match the exact role required by the server-side admin guard.
+    // Checking only `admin` here can send an account without the required
+    // super_admin role into /admin, where it is immediately redirected back.
+    const isSuperAdmin =
+      tokenResult.claims.admin === true &&
+      tokenResult.claims.role === "super_admin";
 
-    if (tokenResult.claims.admin === true) {
-
-      router.replace("/admin");
-
-    } else {
-
-      router.replace("/dashboard");
-
-    }
+    router.replace(isSuperAdmin ? "/admin" : "/dashboard");
 
 
   } catch (error) {

@@ -67,5 +67,20 @@ export interface Scholarship {
 
   lastVerifiedAt: string | null;
 
+  /** Editorial verification state, separate from the application window. */
+  verification?: {
+    status: "pending" | "verified" | "rejected";
+    sourceUrl?: string;
+    lastVerifiedAt: string | null;
+  };
+
+  /** Controls whether this record is visible in the public directory. */
+  publication?: {
+    status: "draft" | "in_review" | "published" | "archived";
+  };
+
+  createdAt?: string;
+  updatedAt?: string;
+
   isDemo: boolean;
 }

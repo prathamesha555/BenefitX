@@ -6,6 +6,7 @@ import {
 
   LayoutDashboard,
   GraduationCap,
+  BookOpen,
   Landmark,
   Users,
   ShieldCheck,
@@ -56,18 +57,6 @@ interface AdminDashboardProps {
 
 
 const comingSoonModules = [
-
-  {
-    title: "Scholarship Management",
-    description: "Create and manage scholarship records.",
-    icon: GraduationCap
-  },
-
-  {
-    title: "Government Schemes",
-    description: "Manage government benefit information.",
-    icon: Landmark
-  },
 
   {
     title: "Verification Centre",
@@ -286,6 +275,24 @@ export default function AdminDashboard({
 
           </p>
 
+
+          <button
+            type="button"
+            onClick={() => router.push("/admin/scholarships")}
+            className="mb-2 flex min-h-[46px] w-full items-center gap-3 rounded-xl px-4 text-sm font-semibold text-[#075B46] transition hover:bg-[#EEF3EC]"
+          >
+            <BookOpen size={18} />
+            Scholarship Management
+          </button>
+
+          <button
+            type="button"
+            onClick={() => router.push("/admin/schemes")}
+            className="mb-2 flex min-h-[46px] w-full items-center gap-3 rounded-xl px-4 text-sm font-semibold text-[#075B46] transition hover:bg-[#EEF3EC]"
+          >
+            <Landmark size={18} />
+            Government Scheme Management
+          </button>
 
           {comingSoonModules.map((item) => {
 
@@ -653,6 +660,21 @@ export default function AdminDashboard({
 
             <div className="mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
 
+
+              <button
+                type="button"
+                onClick={() => router.push("/admin/scholarships")}
+                className="rounded-2xl border border-[#D9E8DD] bg-white p-6 text-left shadow-sm transition hover:-translate-y-1 hover:border-[#9EBEAA] hover:shadow-lg"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#EEF3EC] text-[#075B46]">
+                    <BookOpen size={23} />
+                  </div>
+                  <span className="rounded-full bg-[#E8F5EC] px-3 py-1.5 text-[9px] font-bold uppercase tracking-wide text-[#176344]">Active</span>
+                </div>
+                <h3 className="mt-6 text-base font-bold text-[#123D32]">Scholarship Management</h3>
+                <p className="mt-2 text-xs leading-6 text-[#718077]">Create, edit, verify and manage scholarship records stored in Firestore.</p>
+              </button>
 
               {comingSoonModules.map((item) => {
 

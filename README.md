@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Admin Scholarship Management
+
+The protected admin module is available at `/admin/scholarships` for accounts whose Firebase session has the `admin: true` and `role: super_admin` claims. It supports creating, viewing, editing, filtering, and deleting scholarship records in the Firestore `scholarships` collection.
+
+Scholarship records keep application status separate from editorial verification and publication status. Publishing is blocked until the official source is marked verified and the key benefit, eligibility, document, and application-step fields are present.
+
+The public scholarship directory still uses the existing local demonstration data in this iteration. Connecting published Firestore records to the public directory and detail pages is the next integration step; adding records in Admin does not yet make them appear on public pages.
+
+
+## Cloud Firestore setup
+
+See [`docs/FIRESTORE_SETUP.md`](docs/FIRESTORE_SETUP.md) for creating the live Firestore database, configuring the Firebase Web App and Admin SDK, deploying security rules, and testing the connection with `npm run db:check`.
